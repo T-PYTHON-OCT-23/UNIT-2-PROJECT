@@ -1,0 +1,221 @@
+*{
+padding:0 ;
+margin: 0;
+font-family: 'Amiri', sans-serif;
+box-sizing: border-box;
+
+}
+
+.bady{
+  background: #999;
+}
+
+.homepage{
+ width:100% ;
+ height: 100vh;
+ background-image:linear-gradient(rgba(0, 0, 0, 185),rgba(0, 0, 0, 0.11)) ,url('/static/images/saudi2.jpg');
+ background-position: center;
+ background-size: cover;
+ padding-left: 8%;
+ padding-right: 8%;
+ box-sizing: border-box;
+}
+
+
+.logo-vison{
+    width: 10%;
+    height: 15%;
+    cursor: pointer;
+  
+ }
+ 
+.logo{
+    width: 20%;
+    height: 30%;
+    cursor: pointer;
+    margin-right: 200px;
+ }
+
+.material-symbols-outlined{
+    height: 10%;
+    cursor: pointer;
+    color: aliceblue; 
+    
+ }
+
+.navbar-brand {
+    width:100%;
+    align-items: center;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    gap: 5vh;
+    padding: 1px 5rem;   
+     
+    
+ }
+ 
+.navbar-brand ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 40px;
+    position: relative;
+    padding-top: 20px;
+    justify-content: space-between;
+    
+ } 
+ 
+.navbar-brand ul li a{
+     text-decoration: none;
+     color: #fff;
+     text-transform: uppercase;
+  } 
+ 
+.navbar-brand ul li ::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    transition: 0.5s;
+    
+  } 
+ 
+.navbar-brand ul li:hover ::after{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
+.row{
+   display: flex;
+   height: 88%;
+   align-items: center;
+  }
+
+.col{
+   flex-basis: 50%;
+  }
+
+ h1{
+   color: #fff;
+   font-size: 50px;
+  } 
+ 
+ p{
+   color: #fff;
+   font-size: 12px;
+   line-height: 15px;
+  } 
+
+  h5{
+   color:#fff;
+   font-size: 20px;
+   font-style:bold;
+   text-shadow: 0 0 5px #999;
+  } 
+
+  .row-page h5{
+    display: flex;
+    height: 88%;
+    align-items: center;
+   }
+ 
+ .col-page p{
+  flex-basis: 50%;
+   }
+ 
+
+button{
+   width: 180px;
+   color: black;
+   font-size: 13px;
+   padding: 12px 0;
+   background: #fff;
+   border: 0;
+   border-radius: 20px;
+   outline: none;
+   margin-top: 30px;
+  
+  }
+
+.card{
+   width: 230px;
+   height: 230px;
+   display: inline-block;
+   border-radius: 10px;
+   padding: 15px 25px;
+   box-sizing: border-box;
+   cursor: pointer;
+   margin:10px 15px;
+   background-position:center;
+   background-size: cover;
+   transition:transform 0.5s;
+  }
+
+  .card1{
+   background-image:url('/static/images/Riyadh.jpg') ;
+  }
+  .card2{
+   background-image:url('/static/images/makat.jpg') ;
+  }
+  .card3{
+   background-image:url('/static/images/Abha.png') ;
+  }
+  .card4{
+   background-image:url('/static/images/Taif.jpg') ;
+  }
+  .card:hover{
+   transform:translateY(-10px);
+  }
+
+  .card p {
+   text-shadow: 0 0 15px #000;
+   font-size: 8px;
+  }
+
+
+.page-mecca{
+  width:100% ;
+  height:100vh;
+  background-image:linear-gradient(rgba(0, 0, 0, 171),rgba(0, 0, 0, 0.171)) ,url('/static/images/makat33.jpg');
+  background-position: center;
+  background-size: cover;
+  
+}
+
+ .container{
+  width: 90%;
+  padding: 20px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  }
+
+ .box{
+  width: 250;
+  margin: 0 10px;
+  box-shadow: 0 0 30px rgb(255, 255, 255);
+  transition: 1s;
+  shape-margin:  rgb#fff 10px;
+ }
+
+ .box img{
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+
+ }
+
+ .box:hover{
+  transform: scale(1.3);
+  z-index: 2;
+
+ }
+ h5{
+  color: aliceblue;
+ }
+
+
+
