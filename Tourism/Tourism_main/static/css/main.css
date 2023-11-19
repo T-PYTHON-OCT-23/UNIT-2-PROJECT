@@ -1,0 +1,446 @@
+
+.video-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    
+}
+
+video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width:100%;
+    height: auto;
+    z-index: -1;
+}
+.content-container {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color:rgb(241, 217, 186); 
+    text-align: start;
+    z-index: 1; 
+    font-family: 'DM Serif Display', serif;
+}
+.contant h2{
+    text-align: center;
+    margin: 80px;
+    font-family: 'Alumni Sans Inline One', sans-serif;
+    font-size:60px;  
+    color:rgb(241, 217, 186);  
+}
+
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:last center;
+    gap: 15px;
+    margin-top: -5rem;
+    background-color: rgba(207, 185, 157, 0.211);
+}
+.footer-container:hover{
+    transform: scale(0.9,0.9);
+    color: rgb(13, 13, 13);
+}
+
+.footer button{
+    color: rgb(59, 36, 8);
+   font-family: 'Patua One', serif;
+    font-size: 20px;
+}
+#footer-subtext{
+    font-size: 10px;
+    margin-top: 60px;
+    
+}
+
+.van-container{
+    position: fixed;
+    width: 100%;
+    margin-bottom: 70px;
+    z-index: 500;
+}
+.van-base{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.Sigin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+}
+.Sigin a{
+    text-decoration: none;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#logo{
+    display: flex;
+    flex-direction:inline-block;
+    gap: 1px;
+    align-items: center;
+    justify-content: center;
+}
+#img-logo1{
+    object-fit:fill;
+    border-radius:15%;
+    padding-bottom:70px ;
+    padding-left: 5px;   
+    width: 70px;
+   
+}
+#img-logo2{
+    object-fit:fill;
+    width: 70px;
+}
+.bar a  li {
+    color: rgb(52, 33, 10);
+}
+
+.alula-container{
+    background-image: url('/static/img/alula05.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 40vh 5vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.title{
+    font-family: 'Alumni Sans Inline One', sans-serif;
+    font-size:90px;  
+    color: rgb(45, 26, 8);
+    margin-top: 1px;
+    margin-left: 20px;
+    
+}
+.card-container-all{
+    background-color:rgba(255, 255, 255, 0.505);
+    width: 185vh;
+    height: 100hv;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   
+}
+.iframe-all{
+    width: 800px;
+    height: 500px;
+    padding-left: 30;
+    padding-right: 30;
+    padding-bottom: 30;
+    padding-top: 0;
+}
+.card-container-all p{
+    font-size: 20px;
+    text-align: center;
+    color: rgb(47, 32, 11);
+}
+.card-container-all h5{
+    font-size: 30px;
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+    margin-right: 30px;
+    color: rgb(0, 0, 0);
+}
+
+a {
+    font-size: medium;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+}
+.title-cocontainer-all{
+    font-family: 'Luckiest Guy', cursive;
+    font-size:40px;  
+    color: rgb(7, 4, 2);
+    text-align: center;
+}
+.iframe-card1{
+    width: 500px;
+    height: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 0;
+}
+
+.img-card{
+    height: 200px;
+    
+}
+
+.allcard1{
+    font-size: 12px;
+    text-align: center;
+    color: rgb(21, 13, 3);
+}
+.citycard1{
+    font-size: 10px;
+    text-align: center;
+    color: rgb(16, 10, 2);
+}
+.button{
+    background-color:rgba(55, 54, 53, 0.553);
+    size: 10px;
+    font-size: 10px;
+    border-color:rgba(20, 12, 2, 0.553);
+}
+.subcard-container-all{
+    margin-bottom: 90px;
+    width: 1100px;
+    margin-left: 15%;
+}
+
+.riyadh-container{
+    background-image: url('/static/img/Riyadh.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 45vh 5vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    text-align: center;
+    justify-content: center;
+    background-attachment: fixed;
+
+}
+
+.title-container-riyadh{
+    background-color: white;
+    margin-top: -20rem;
+    display:block;
+    width: 50%;
+    padding: 20px;
+   
+}
+.title-riyadh{
+    font-size:90px;  
+    color: rgb(18, 10, 4);
+    margin-top: 1px;
+    text-align: center;
+    font-family: 'Alumni Sans Inline One', sans-serif;
+
+    
+}
+.contant-riyadh{
+    font-family: 'Patua One', serif;
+    font-size:20px;  
+    color: rgb(50, 27, 9);
+    text-align: start;
+    margin-top: 1px;
+}
+.subcontant{
+    font-family: 'Luckiest Guy', cursive;
+    text-align: center;
+}
+
+.KingdomTower{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+.img-KingdomTower{
+    width: 900px;
+    height: 500px;
+}
+#mall2{
+    background-color:rgba(0, 0, 0, 0.368)
+}
+.contant-KingdomTower{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.carousel-kingdomTower{
+    width: 800px;
+    height: 1000px;
+    text-align: center;
+    margin-left: 350px;
+}
+
+
+.carousel-riyadh {
+    height: 600px;
+    width: 800px;
+    margin-left: 25%;
+}
+
+.img-carousel-riyadh{
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.first-cintant-faisaliahTower{
+
+    text-align: start;
+    font-size: 20px;
+    font-family: 'Titan One', sans-serif;
+    margin-left: 10px;
+    padding: 20px;
+    
+}
+#historical-landmarks{
+    text-align: start;
+    font-size: 20px;
+    font-family: 'Titan One', sans-serif;
+    margin: 17px;
+    padding: 20px;
+
+}
+#introduction2{
+   
+    text-align: start;
+    font-size: 17px;
+    font-family: 'Titan One', sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+
+     
+}
+#introduction-Season{
+    text-align: start;
+    font-size: 20px;
+    font-family: 'Titan One', sans-serif;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#imgtravel{
+    width: 150px;
+    margin-left: 50px;
+    
+}
+.introduction-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+}
+.img-card-riyadh{
+    height: 200px;
+
+}
+
+.card-container2{
+    margin-bottom: 80px;
+    margin-left: 10px;
+    padding-bottom: 70px;
+    background-color: rgb(249, 227, 199);
+}
+.button-riyadh{
+    margin-left: 20%;
+    background-color: rgb(21, 16, 10);
+    border-radius: 20px;
+}
+
+.jazan-container{
+    
+    background-image: url('/static/img/jazan1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 40vh 5vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    text-align: center;
+    
+
+}
+.title-container-ganerl{
+    background-color: white;
+    margin-top: -13rem;
+    width: 35%;
+    padding: 20px;
+    border-top-right-radius:  20px;
+}
+.card-container{
+    padding: 10vh;
+    background-color: rgb(237, 229, 220);
+    
+}
+.card-base{
+    margin: 10hv;
+}
+
+.carousel-jazan {
+    height: 600px;
+    width: 800px;
+    
+}
+
+.img-carousel-jazan{
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+    margin-right: 50px;
+}
+
+.carousel-jazan2{
+    display: flex;
+    flex-direction: row;
+    gap:1px;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 50px;
+
+}
+#subcontant-jazan{
+    font-family: 'Luckiest Guy', cursive;
+    text-align: start;
+    margin-left: 50px;
+    font-size: 20px;
+}
+.makkah-container{
+    background-image: url('/static/img/makkah01.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 40vh 5vw;
+    width: 100%;
+    
+}
+
+#sigin-soon{
+    width: 600px;
+    height: 600px;
+    margin-left: 400px;
+    
+
+}
