@@ -38,8 +38,8 @@ def city_detail(request, city_name):
     context = {
         'city': {
             'name': city['name'],
-            'numbers': range(1, 5),
             'catchy_phrase': get_catchy_phrase(city_name),
+            'numbers': [1, 2, 3, 4, 5],
         }
     }
     

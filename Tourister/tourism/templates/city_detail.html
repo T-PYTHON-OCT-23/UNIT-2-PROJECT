@@ -10,11 +10,11 @@
         <p class="lead">{{ city.catchy_phrase }}</p>
         
         <!-- Add your image carousel here -->
-        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <div id="carouselExample" class="carousel slide custom-carousel" data-ride="carousel">
             <div class="carousel-inner">
-                {% for i in numbers %}
-                    <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                        <img src="{% static 'images/static_city_images/' %}{{city.name}}_{{ i }}.jpg" class="d-block w-100" alt="{{ city.name }} Image {{ i }}">
+                {% for i in city.numbers %}
+                    <div class="carousel-item{% if forloop.first %} active{% endif %}">
+                        <img src="{% static 'images/static_city_images/' %}{{ city.name }}_{{ i }}.jpg" class="d-block w-100 custom-image" alt="{{ city.name }} Image {{ i }}">
                     </div>
                 {% endfor %}
             </div>
@@ -29,4 +29,27 @@
             </button>
         </div>
     </div>
+
+    <style>
+        .custom-carousel {
+            /* Add your custom styles for the carousel container here */
+            border: 2px solid #ddd; /* Add a border around the carousel container */
+            border-radius: 15px; /* Add rounded corners to the carousel container */
+            overflow: hidden; /* Hide any overflow content */
+        }
+
+        .custom-image {
+            /* Add your custom styles for the images here */
+            max-height: 400px; /* Set a maximum height for the images */
+            object-fit: cover; /* Ensure the images cover the entire container */
+            border-radius: 10px; /* Add rounded corners to the images */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow to the images */
+            transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+        }
+
+        .custom-image:hover {
+            /* Add styles for the images on hover */
+            transform: scale(1.05); /* Scale up the image slightly on hover */
+        }
+    </style>
 {% endblock %}
