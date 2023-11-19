@@ -1,0 +1,156 @@
+
+*{
+
+    border-radius: 20px;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Noto Serif Balinese', serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.top-nav{
+    background-color: #f6f6f6;
+    color: #1e1e1e;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 500;
+    align-items: center;
+    
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #1e1e1e;
+    transition: all 500ms ease-out;
+}
+
+.nav-link:hover{
+    color: #fe5656;
+    font-size: 1.2rem;
+}
+.home,.hail,.riyadh,.al-ula,.jeddah{
+    padding-top: 4rem;
+    padding-bottom: 10px;
+    
+    
+}
+.img-brand{
+    width:40px;
+    height:40px;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+.img-brand:hover{
+    transform: rotate(360deg);
+}
+
+
+
+.button{
+    display: flex;
+    justify-content: center;
+    
+}
+.dropdown-item{
+    
+    color: white;
+    background-color: #6d6e70;
+}
+
+.primry-color{
+    background-color: #ffffff;
+
+}
+.restaurants-cards .card{
+    background-color: #ffffff;
+}
+
+.scand-color{
+    background-color: #f6f6f6;
+}
+
+.container{
+    padding-bottom: 3rem;
+    background-color: #f6f6f6;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.5), 10px 10px 10px rgba(0, 0, 0, 0.2);
+     
+}
+
+.page-title{
+    height: 25rem;
+    
+ 
+} 
+.page-title img{
+    width:60%;
+    
+    height: 100%;
+    
+}
+
+.city-intro {
+    padding: 2rem;
+    color:#6d6e70;
+    
+    
+}
+
+.Saudi-intro{
+    padding: 5rem;
+}
+
+.hotels-cards,.restaurants-cards,.tourist-places-cards{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.card-text{
+    text-align: start;
+}
+
+.tourist-places-cards .card{
+    background-color: #f6f6f6;
+    
+}
+.hotels-cards .card{
+    background-color: #f6f6f6;
+    
+}
+
+.card p{
+    color: black;
+}
+
+.down-navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.home-row{
+
+    background-image: url('/static/images/riyadh_city/riyadh_p.jpg');
+    background-size: cover;
+    z-index: 0.1;
+}
+
+.Saudi-intro{
+
+    color: white;
+}
+
+.card img{
+
+    height: 10rem;
+}
+
+.card-text span{
+    color: rgb(168, 168, 11);
+    
+}
+

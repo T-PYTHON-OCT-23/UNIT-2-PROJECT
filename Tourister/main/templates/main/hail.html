@@ -1,0 +1,157 @@
+
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block title %}Hail{% endblock %}
+
+{% block content %}
+
+<div class="hail">
+  <h1 class="text-center">Hail City</h1>
+  <div class="container" >
+    
+    <div class="row align-items-center text-center">    
+      <div class="col-12 align-items-center  text-center" >
+        <div class="row align-items-center text-center text-dark"style="border: 1px; border: radius 20px;">
+          <div id='back' class="page-title" >
+            <hr style="color: white;" >
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/BLtn1rFHaio?si=kV3YUDUd36PL63aG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+            <div class="row align-items-center text-start ">
+              <div class="city-intro">
+                <hr style="color: white;" >
+                  <h2 >Hail City Explore the Undiscovered:</h2>
+                
+                  <p>Hail is located in northern Saudi Arabia. Hail has a variety of terrain that you will enjoy on land trips.</p>
+                
+
+              </div>
+          </div>
+         
+    
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="hail scand-color" style="margin-top: 20px; border-radius:0;" >
+  <h2 id="Tourist-place" class="text-center" >Tourist places</h2>
+  <div class="container primry-color " style="background-color: #ffffff;" >
+    <div class="row align-items-center text-center">
+      
+      <hr style="color: white;" >
+      <div class="tourist-places-cards" >
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'images/hail_city/gishlah.jpeg' %}" style="border-radius: 0;" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">AL-Gishlah</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://maps.app.goo.gl/h4Xe5ikUW58vDcYC7" class=" btn btn-outline-secondary">Visit the location</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'images/hail_city/fayd.jpg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Fayd City</h5>
+            <p class="card-text">Fayd is a historical city located to the southeast of the Hail region. It is considered one of the historical archaeological sites of the region, as its mountains store historical inscriptions dating back to prehistoric times.</p>
+            <a href="https://maps.app.goo.gl/RsffukrJNaKex9xr9" class=" btn btn-outline-secondary">Visit the location</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="{% static 'images/hail_city/glah2.jpeg' %}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Aaref Castle</h5>
+            <p class="card-text">Aarif Castle is a historical castle located in the heart of Hail city, Saudi Arabia. It sits atop a hill overlooking the city, which is how it got its name. The castle is believed to have been built in 1840 and is considered one of Hail's most important cultural landmarks. It is easily visible from anywhere in the city.</p>
+            <a href="https://maps.app.goo.gl/RTqjGd3bZ6dTNzUf7" class=" btn btn-outline-secondary">Visit the location</a>
+          </div>
+        </div>
+        
+      </div>
+      </div>
+    </div>
+</div>
+    
+<div class="hail primry-color ">
+  <h2 id="Restaurants" class="text-center" >Restaurants</h2>
+    <div class="container" >
+      <div class="row align-items-center text-center" >
+        
+        <hr style="color: white;" >
+        <div class="restaurants-cards" >
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/hail_city/point_burger.jpeg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Point Burger</h5>
+             
+              <a href="https://maps.app.goo.gl/MnpSSzPr2YA6hVBB6" class=" btn btn-outline-secondary">Visit the location</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/hail_city/ain.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ain Al Jabal Lounge</h5>
+            
+              <a href="https://maps.app.goo.gl/tndmPYeJJGurUsGRA" class=" btn btn-outline-secondary">Visit the location</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/hail_city/mrsay.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Marsai</h5>
+             
+              <a href="https://maps.app.goo.gl/VQh1xYSqfqXcjbBZ9" class=" btn btn-outline-secondary">Visit the location</a>
+            </div>
+          </div>
+          
+        </div>
+        </div>
+      </div>
+      </div>
+<div class="hail scand-color" style="margin-top: 20px; border-radius:0;" >
+  <h2 id="Hotels" class="text-center" >Hotels</h2>
+      <div class="container primry-color " style="background-color: #ffffff;">
+        <div class="row align-items-center text-center">
+          
+          <hr style="color: white;" >
+          <div class="hotels-cards" >
+            <div class="card primry-color" style="width: 18rem;">
+              <img src="{% static 'images/hail_city/tolip.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Golden Tulip Hotel</h5>
+                <p class="card-text"><span class="material-symbols-outlined">
+                  star star star star
+                  </span></p>
+                <a href="#" class=" btn btn-outline-secondary">Visit the location</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="{% static 'images/hail_city/mini.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Millennium Hail Hotel</h5>
+                <p class="card-text"><span class="material-symbols-outlined">
+                  star star star star star
+                  </span></p></p>
+                <a href="https://maps.app.goo.gl/qyzUHHFtbft3gUFE9" class=" btn btn-outline-secondary">Visit the location</a>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img src="{% static 'images/hail_city/hotel.jpg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Residence Al Yasmine Hotel </h5>
+                <p class="card-text"><span class="material-symbols-outlined">
+                  star star star star star
+                  </span></p></p></p>
+                <a href="https://maps.app.goo.gl/KmWqQvDDL2G1BGBn7"  class="btn btn-outline-secondary">Visit the location</a>
+              </div>
+            </div>
+            
+          </div>
+          </div>
+        </div>
+        
+    </div>
+</div>
+
+{% endblock %}
