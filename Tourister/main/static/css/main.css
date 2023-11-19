@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+}
+body{
+    background-color: blueviolet;
+}
+

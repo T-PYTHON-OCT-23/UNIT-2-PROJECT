@@ -1,0 +1,84 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="homepage-content" style="padding: 4vh;display: flex; flex-direction: column; gap: 5vh;">
+    <div class="container-fluid" style="display: flex;flex-direction: column; width: 90%; gap: 2rem;">
+        <h1 style="font-size: 2rem;">WELCOME TO THE LAND<br>OF
+          <div>
+            <span class="animated-text"> Beauty   </span>
+            <span class="animated-text" style="animation-delay: 2s;"> culture   </span>
+            <span class="animated-text" style="animation-delay: 4s;"> Entertainment  </span>
+          </div> 
+        </h1> 
+      
+
+        <p style=" display: flex;flex-direction: column;width: 50%;">
+          Since the launch of Vision 2030, Saudi Arabia is more open than 
+          ever before welcoming people from around the globe. With the 
+          introduction of the e-visa in 2019, millions of visitors have been 
+          drawn to the Kingdom for a lot of activities such as amusement parks 
+          and festivals as well as enjoying, the rich heritage and culture of 
+          Saudi Arabia don,t miss the opportunity and visit now.
+        </p>
+
+        <div class="input-group rounded" style="padding-right: 500px;">
+          <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+          <span class="input-group-text border-0" id="search-addon">
+            <i class="fas fa-search"></i>
+          </span>
+        </div>
+
+        <img src="" alt="">
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+               <div class="card">
+                    <img src="{% static '/images/riyadh2.jpg'%}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Riyadh</h5>
+                        <p class="card-text">content.</p>
+                        <a href="http://127.0.0.1:8000/riyadh/" class="btn btn-outline" style="color: rgb(208, 158, 255);">Read more...</a>
+                    </div>
+                </div>
+          </div>
+      
+            <div class="col-md-3 mb-4">
+               <div class="card">
+                 <img src="{% static '/images/abha2.jpg'%}" class="card-img-top" alt="...">
+                 <div class="card-body">
+                     <h5 class="card-title">Abha</h5>
+                     <p class="card-text">content.</p>
+                     <a href="http://127.0.0.1:8000/abha/" class="btn btn-outline" style="color: rgb(208, 158, 255);">Read more...</a>
+                </div>
+            </div>
+       </div>
+      
+        <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="{% static '/images/mekkah.jpg'%}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mekkah</h5>
+                <p class="card-text">content.</p>
+                <a href="http://127.0.0.1:8000/mekkah/" class="btn btn-outline" style="color: rgb(208, 158, 255);">Read more...</a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="{% static '/images/alula.jpg'%}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">AlUla</h5>
+                <p class="card-text">content</p>
+                <a href="http://127.0.0.1:8000/alula/" class="btn btn-outline" style="color: rgb(208, 158, 255);">Read more...</a>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+      
+{% endblock %}
