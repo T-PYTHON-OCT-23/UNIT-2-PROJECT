@@ -1,0 +1,109 @@
+{% extends 'main/base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  {% block title %} Tourister  {% endblock %} </title>
+
+
+</head>
+<body>
+  {% block content %} 
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+
+
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/static/images/Ss4k.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block text-white">
+                <h5>Riyadh</h5>
+                <p>capital and main financial hub, is on a desert plateau in the country’s center. Business district landmarks include the 302m-high Kingdom Centre, with a sky bridge connecting 2 towers, and 267m-high Al Faisaliah Centre, with a glass-globe summit. In the historical Deira district, Masmak Fort marks the site of the 1902 raid that gave the Al Sauds control of Riyadh</p>
+                <p><a href="{% url 'main:riyadh_view' %}" class="btn btn-warning mt-3">Read More..</a></p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/static/images/S4k.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Makkah</h5>
+                <p>Mecca is important to Muslims for several reasons. The founder of Islam, Mohammed, was born in Mecca in 570 A.D. He conquered the city and announced it as the holiest city of Islam in 630 A.D. Mecca holds the Kaaba, which is regarded as the holiest structure in Islam. Muslims are obligated to take a pilgrimage to Mecca at least once in their lives to view it. </p>
+                <p><a href="{% url 'main:makka_view' %}" class="btn btn-warning mt-3">Read More..</a></p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/static/images/R7k.png" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Southern region</h5>
+                <p>Enjoy the view of the nature’s mountains in Al-Dabab walkway. Observe the wide terraced farm fields at a height of 2200 m on the edge of the Sarawat Mountains. Breathe in the clean mountain air whilst you take a stroll through the heavy fog. Enjoy the beautiful taste of the good life in the green landscapes in an experience where you will capture a countless number of pictures of Abha’s mesmerizing fog.</p>
+                <p><a href="{% url 'main:abha_view' %}" class="btn btn-warning mt-3">Read More..</a></p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d--block w-100" src="/static/images/ithraa.webp" alt="fourth slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Eastern Province</h5>
+                <p> A Glamorous Destination that Makes Your Eyes Sparkle. AlUla, with its rich details, is a historical mine people seek from all over the world. On its land cultures met, and many civilizations were built, especially at Hegra, the first Saudi site to enter the UNESCO World Heritage List.</p>
+                <p><a href="{% url 'main:khobar_view' %}" class="btn btn-warning mt-3">Read More..</a></p>
+              </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+
+
+
+
+      <div class="paragraph">
+        <h2 class="h2-p"> Tourister in Saudi Arabia </h2>
+        <p>  The Kingdom of Saudi Arabia has witnessed a fantastic improvement in the last few years. There is growth in the tourism sector in Saudi Arabia. Tourism in Saudi Arabia has grown to be a worthy resource for the Kingdom of Saudi Arabia.
+
+          Although most tourists still visit Saudi Arabia for religious pilgrimages, Saudi Arabia is the second biggest tourist destination in the Middle East.
+          
+          Many tourists visit Saudi Arabia to see the historical places and its Museums. In addition to archeological places in Saudi Arabia, there are many modern places you can visit and enjoy.
+          
+          Interest in tourism comes with Saudi Vision 2030 that Saudi Arabia will be an international tourist destination with over 20 million tourists.
+          
+          In this article, we will give you all that you want to know about Saudi Arabia. We will focus on the tourism sector.</p>
+          <h2 class="h2-p"> Tourism in Saudi Arabia and the Vision 2030</h2>
+          <p>
+            Tourism in Saudi Arabia is one of the goals of Vision 2030, in which it is expected to receive 100 million visits to the Kingdom annually. There are many government efforts to develop the tourism sector in Saudi Arabia to become compatible with Vision 2030 and achieve its goals, the most important of which is increasing the domestic product to more than 10% and making the Kingdom one of the 5 most welcoming countries for tourists.
+            
+            With the vision of the Kingdom 2030, Saudi Arabia has provided many job opportunities to employ Saudi youth and contribute to the development of the Kingdom, especially in the tourism sector, through the establishment of many tourism and entertainment projects in the Kingdom to attract the largest number of tourists.</p>
+            <h2 class="h2-p"> Geographical location </h2>
+         
+  
+            <p class="paragraph"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14946605.532261098!2d34.42006779019905!3d23.8515195172817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e7b33fe7952a41%3A0x5960504bc21ab69b!2sSaudi%20Arabia!5e0!3m2!1sen!2ssa!4v1700127329325!5m2!1sen!2ssa" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+    
+            
+            <p> Extending across most of the northern and central Arabian Peninsula, Saudi Arabia is a young country that is heir to a rich history. In its western highlands, along the Red Sea, lies the Hejaz, which is the cradle of Islam and the site of that religion’s holiest cities, Mecca and Medina. In the country’s geographic heartland is a region known as Najd (“Highland”), a vast arid zone that until recent times was populated by nomadic tribes. To the east, along the Persian Gulf, are the country’s abundant oil fields that, since the 1960s, have made Saudi Arabia synonymous with petroleum wealth. Those three elements—religion, tribalism, and untold wealth—have fueled the country’s subsequent history</p>
+      
+    
+          </div>
+
+
+      {% endblock %}
+</body>
+</html>

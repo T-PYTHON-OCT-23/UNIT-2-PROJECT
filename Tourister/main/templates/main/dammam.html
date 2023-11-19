@@ -1,0 +1,114 @@
+{% extends 'main/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block title %} Dmamma {% endblock %} </title>
+</head>
+<body>
+    
+    {% block content %} 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+
+
+
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/static/images/half-moon.avif" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="title-page" >  Dammam  </h1>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/static/images/dammamcard.avif" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="title-page" > Dammam </h1>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/static/images/tick-dammam.avif" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+                <h1 class="title-page" >  Dammam  </h1>
+              </div>
+          </div>
+      
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+      <div class="card-deck ">
+        <div class="card">
+          <img class="card-img-top" src="/static/images/dammamcard.avif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Dammam Corniche</h5>
+            <p class="card-text">The Dammam Corniche is well-known for its distinctive attractions, such as a stunning boardwalk and a lovely park with well-kept grass. The Dammam Corniche will keep the nature lover in you fascinated. Take a leisurely walk along the beach and admire the stunning blue waters of the Persian Gulf. Enjoy a cup of coffee from one of the cafes by the corniche and witness one of the most amazing picturesque sunsets..</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="/static/images/half-moon.avif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Half Moon Bay </h5>
+            <p class="card-text">Away from the hustle and bustle of city life, The Half Moon Bay is a beautiful beachside area. Along the shore, the government has built cottages for public use. Vendors have put up several stalls where customers may buy a variety of foods. Then there’s an area beyond the beach that’s like a miniature desert with small dunes, where you can enjoy some dune riding with the hired desert bikers and ATVs’.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="/static/images/tick-dammam.avif" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Tick Tock Escape Rooms Dammam</h5>
+            <p class="card-text">Tick Tock Escape Rooms Dammam happens to be one of the most sought after activity centres in Dammam where tourists will be able to get an experience of a live video game scenario. When you visit this place, you will be grabbing your squad and solving puzzles to move forward to reach the end of the puzzles. At the end, you will be winning your freedom from the closed four walls.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+
+
+     <div class="paragraph">
+      <h2 class="h2-p"> About Dammam </h2>
+      <p> Dammam is the fourth-most populous city in Saudi Arabia after Riyadh, Jeddah, and Mecca. It's the capital of the Eastern Province, with a total population of 1,532,300 as of 2022. The judicial and administrative bodies of the province, in addition to the administrative offices of other minor governmental departments functioning within the province, are located in the city.[1] The word itself is generally used to refer to the city, but may also refer to its eponymous governorate.
+
+        Dammam is known for being a major administrative center for the Saudi oil industry. Dammam constitutes the core of the Dammam metropolitan area, also known as the Greater Dammam area, which comprises the 'Triplet Cities' of Dammam, Dhahran, and Khobar. The area has a population of 2,190,900 as of 2022[1] and is closely linked to the city through social, economic, and cultural ties. The city is growing at an exceptionally fast rate of 12% a year[2] – the fastest in Saudi Arabia, the GCC, and the Arab world.[2] As of 2016, Greater Dammam is the fourth largest metropolitan area by both area and population in the Gulf Cooperation Council.
+        
+        The area that eventually became Dammam was settled by the Dawasir tribe around 1923, with permission of King Ibn Saud. The area was originally a fishing hamlet and was developed into its current state within half a century soon after the discovery of oil in the region, both as a port city and an administrative center. With the unification of Saudi Arabia, Dammam was made the capital of the newly formed Eastern Province.
+        
+        The Dammam metropolitan area and the rest of the Eastern Province are served by the King Fahd International Airport (KFIA), the largest airport in the world in terms of land area (approximately 780 km2 [300 sq mi]), about 31 km (19 mi) northwest of the city. Dammam's King Abdul Aziz Sea Port is the largest on the Persian Gulf, its import-export traffic second only to the historic Jeddah Islamic Port in the Middle East and North Africa (MENA). Dammam is a member-city in the World Energy Cities Partnership (WECP).[3]
+        
+        Dammam is a city located in the Eastern Province of Saudi Arabia, on the Persian Gulf. It is the capital of the Eastern Province and the third largest city in Saudi Arabia. It is the largest city in the Eastern Province and the sixth largest in the Kingdom. The city of Dammam is the administrative center of the Dammam Metropolitan Area, which includes the cities of Al Khobar and Dhahran.</p>
+   
+  
+        <p class="paragraph"><iframe width="800" height="450" src="https://www.youtube.com/embed/qGbFF7WrwLI?si=ywUxHdYT5_06hgvj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+        </p></div>
+
+
+
+    {% endblock %}
+
+</body>
+</html>

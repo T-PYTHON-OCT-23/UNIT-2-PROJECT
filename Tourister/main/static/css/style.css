@@ -1,0 +1,130 @@
+*{
+    font-family: montserrat;
+
+}
+
+
+.section-padding{
+    padding: 100px 0;
+}
+
+.carousel-item {
+    height: 600px;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+.carousel-caption h5{
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+    z-index: 1;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    z-index: 1;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+
+}
+
+.contact-us{
+    border: 1px solid blue ;
+    border-radius: 15px;
+    padding: 10% 10%;
+
+}
+
+.paragraph{
+    padding: 30px 350px;
+    font-size: 20px;
+    font-family: 'Phudu', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Slab', serif;
+}
+.h-para{
+    padding: 30px 350px;
+    font-size: 50px;
+    font-family: 'Phudu', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+
+
+.mode{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display:flexbox;
+    flex-direction: row;
+    gap: 50px;
+}
+.mode a{
+    color: black;
+    text-decoration:none; 
+    justify-content:space-between;
+}
+.title-page{
+    text-align: center;
+    font-family: 'Phudu', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-size: 100px;
+}
+.container{
+    margin-top: 200px;
+}
+.card-deck {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.h4-par , .h2-p{
+    font-family: 'Phudu', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.num-page{
+    color: rgba(255, 255, 255, 0.198);
+    
+}
+.sticky {
+    position:fixed;
+    top: 50%;
+    left:0;
+    background-color: rgba(39, 32, 105, 0.169);
+    border: 10px solid rgb(33, 43, 98);
+    padding: 40px;
+    font-size: 20px;
+    z-index: 7;
+  }
+
+  .sticky a{
+    color: black;
+    text-decoration:none; 
+    justify-content: center;
+
+
+  }
+.card {
+    overflow: hidden;
+}
+.card img{
+    transition: all 1.5s ease;
+}
+.card:hover img{
+    transform: scale(1.5);
+}
