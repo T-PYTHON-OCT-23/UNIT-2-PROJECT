@@ -9,6 +9,24 @@ def contactPage(request : HttpRequest):
 
     return render(request ,"tourister1/contact.html")
 
-def home(request : HttpRequest):
 
-    return render(request ,"tourister1/home.html")
+
+def riyadh(request : HttpRequest):
+
+    return render(request ,"tourister1/riyadh.html")
+
+def jeddah(request : HttpRequest):
+
+    return render(request ,"tourister1/jeddah.html")
+
+def alula(request : HttpRequest):
+
+    return render(request ,"tourister1/alula.html")
+
+def abha(request : HttpRequest):
+
+    return render(request ,"tourister1/abha.html")
+
+def aboutUs(request : HttpRequest):
+
+    return render(request ,"tourister1/aboutUs.html")

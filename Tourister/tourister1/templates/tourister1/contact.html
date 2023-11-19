@@ -1,9 +1,110 @@
 {% extends 'tourister1/base.html' %}
 {% load static %}
 
-{% block title %} Saudi Golden Tour {% endblock %}
-{%block pagebackground %}
-<img class="hero-img" src="/static/image/backgroundHome.jpg"  alt="Your Logo">
-{%endblock%}
+{% block title %}Contact Us {% endblock %}
 {% block content  %}
+<div class ="wrapper pages-content">
+    <div class = "form">
+ <div class = "container">
+        <form>
+            <section> <div>
+
+
+        <div class = "row">
+            <h1 class ="fw-bold fs-1 text-center"> Contact US</h1>
+        </div>
+            <hr>
+        <form method= "post" autocomplete = "on" action= ""  onsubmit = "return false" > 
+
+
+
+        <div class = "row">
+
+             <label>First Name:</label><br> <input type = "name" placeholder = "First Name"autofocus /> <br>
+
+        </div>
+
+        <div class = "row">
+
+             <label>Last Name:</label><br> <input  type = "name" placeholder = "Last Name"/></label><br>
+
+
+        </div>
+        <div class = "row">
+
+           <label>Email:</label><br> <input type = "email" required/> <br>
+        </div>
+
+        <div class = "row">
+              <label>Contact Number:</label><br> <input type = "tel" pattern = "\d{10}\"  placeholder = "05********" /> 
+        </div>
+
+        <div class = "row">
+           <p><label>Request Type:</label></p>
+        </div>
+        <div class = "row">
+                
+                <label>Suggestions<input name = "level" type = "radio"
+
+                value = "suggestions" ></label>
+                
+                   <label>Complaints<input name = "level" type = "radio"
+
+                    value = "complaints" ></label>
+               
+                   <label>Iquiry<input name = "level" type = "radio"
+
+                    value = "inquiry"></label>
+                    <label>Report<input name = "level" type = "radio"
+
+                        value = "report"></label>
+                
+
+            </div>
+
+        <br>
+
+
+
+        <div class = "row">
+
+            <p><label>Comments:</label> <br>
+
+            <textarea name = "comments" rows = "3" cols="50" >Message</textarea></label></p>
+
+        </div>
+
+        <div class = "row">
+            
+               <p><label>What do you think about our site?</label></p>
+            
+               <label>Very Good<input name = "level" type = "radio"
+
+                value = "very good" ></label>
+           
+            
+               <label>Good<input name = "level" type = "radio"
+
+                value = "good" ></label>
+           
+                <label>Unsatisfactory<input name = "level" type = "radio"
+
+                value = "Unsatisfactory"></label>
+                
+            </div>
+
+
+
+        <br>
+
+
+
+        <input type = "submit" value = "Submit" onclick = "alert('Thank you..your information has been submited !!')">
+        </div>
+ </div> 
+</div>
+</div>
+
+
+
 {% endblock %}
