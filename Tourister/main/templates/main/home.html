@@ -1,0 +1,158 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+Home page
+{% endblock %}
+
+{% block content %}
+<div class="wrapper homepage-content">
+    <div class="sub-content">
+        <h1 class="title display-1">Kingdom of<br>Saudi Arabia</h1>
+        <p class="display-6 bg-success-subtle">A Destination Beyond Expectations</p>
+    </div>
+</div>
+<hr>
+<div class="text-success">
+</div>
+
+<div class="box-para">
+  <div class="row">
+    <div class="col-12 text-center p-5">
+      <h1 class="display-4">Overview</h1>
+      <p class="paragraph">
+        <hr>
+        <div class="text-success">
+        </div>        Tourism in Saudi Arabia is a growing industry, with the government investing heavily in its development. The country has a rich history and culture, as well as stunning natural beauty, making it an attractive destination for visitors from all over the world. 
+        Some of the most popular tourist destinations in Saudi Arabia include the holy cities of Mecca and Medina, the ancient city of Mada'in Saleh, the Red Sea coast, and the mountains of Asir. 
+        The government is also working to develop new tourist destinations, such as the NEOM megacity and the Red Sea Project. These projects are expected to attract millions of visitors in the years to come. 
+        Tourism is a key part of the government's Vision 2030 plan to diversify the economy and reduce reliance on oil. The government is targeting 30 million tourist visits by 2030, and is investing heavily in infrastructure and development to support this goal. 
+        The tourism industry is already creating jobs and generating revenue for the Saudi economy. In 2018, the tourism sector contributed 7.8% to GDP and employed 1.5 million people. The government is committed to further developing the tourism sector, and believes that it has the potential to be a major driver of economic growth in the years to come.</p>
+        <hr>
+        <div class="text-success">
+        </div>    </div>
+  </div>
+</div>
+
+
+<div class="container-test photo-box">
+  <div class="row h-59 w-55 m-5 p-5">
+    <div class="col-4">
+      <div class="overlay">
+        <div class="text">Welcome to Tourism in Saudi Arabia</div>
+        </div>
+      <div class="wrapper-jed photo-jed-1">
+        <div class="sub-content-jed">
+          <h5 class="display-5 d-flex justify-content-center">Peace</h5>
+          <img src="{% static 'images/img-jed.jpg' %}" class="image d-block w-100 h-60">
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="wrapper-jed photo-jed-1">
+        <div class="sub-content-jed">
+          <h5 class="display-5 d-flex justify-content-center">Explore</h5>
+          <img src="{% static 'images/img-kafd3.jpg' %}" class="image d-block w-100 h-60">
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="wrapper-jed photo-jed-1">
+        <div class="sub-content-jed">
+          <h5 class="display-5 d-flex justify-content-center">History</h5>
+          <img src="{% static 'images/img-ula12.jpg' %}" class=" image d-block w-100 h-60">
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div class="container overflow-hidden text-center">
+  <div class="row gy-5 text-center">
+    <h1 class="display-2">Best packages tour for 2024</h1>
+    <div class="col-3 d-flex justify-content-center align-items-center text-center">
+          <div class="card" style="width: 18rem;">
+              <img src="{% static 'images/img11.jpg' %}" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Riyadh City</h5>
+                <p class="card-text">Riyadh is the capital and largest city of Saudi Arabia.It is a modern metropolis with a rich history and culture.</p>
+                <a href="{% url 'main:riyadh_page_view'%}" class="btn btn-outline-success">Discover</a>
+              </div>
+            </div>
+    </div>
+    <div class="col-3 d-flex justify-content-center align-items-center p-3">
+          <div class="card" style="width: 18rem;">
+              <img src="{% static 'images/img10.jpg' %}" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Alula City</h5>
+                <p class="card-text">AlUla, is a mesmerizing land where ancient history intertwines with breathtaking natural beauty.AlUla is a place of extraordinary.</p>
+                <a href="{% url 'main:alula_page_view'%}" class="btn btn-outline-success">Discover</a>
+              </div>
+          </div>
+    </div>
+    <div class="col-3 d-flex justify-content-center align-items-center p-3">
+          <div class="card" style="width: 18rem;">
+              <img src="{% static 'images/img9.jpg' %}" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Makkah City</h5>
+                <p class="card-text">Mecca has been the most important religious site for Muslims for 1,400 years.<br>It is the holiest of Muslim cities.</p>
+                <a href="{% url 'main:makkah_page_view'%}" class="btn btn-outline-success">Discover</a>
+              </div>
+          </div>
+    </div>
+    <div class="col-3 d-flex justify-content-center align-items-center p-3">
+          <div class="card" style="width: 18rem;">
+              <img src="{% static 'images/img8.jpg' %}" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">Jeddah City</h5>
+                <p class="card-text">As the second-largest city in Saudi Arabia, Jeddah is home to a variety of amazing museums and historical landmarks.</p>
+                <a href="{% url 'main:jeddah_page_view'%}" class="btn btn-outline-success">Discover</a>
+              </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+<div class="features">
+  <div class="row m-5 p-5">
+    <h1 class="service display-2 text-center">Our Services</h1>
+      <div class="col-3 text-center">
+        <div class="card border-success mb-3" style="max-width: 18rem;">
+          <div class="card-header">Information</div>
+          <div class="card-body text-success">
+            <h5 class="card-title">Information & planning<span class="material-symbols-outlined">star</span></h5>
+            <p class="card-text">This includes providing information about destinations, attractions, and events.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 text-center">
+        <div class="card border-success mb-3" style="max-width: 18rem;">
+          <div class="card-header">Customer support</div>
+          <div class="card-body text-success">
+            <h5 class="card-title">24/7 Support<span class="material-symbols-outlined">support_agent</span></h5>
+            <p class="card-text">This includes providing contact information for customer support representatives.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 text-center">
+        <div class="card border-success mb-3" style="max-width: 18rem;">
+          <div class="card-header">Travel</div>
+          <div class="card-body text-success">
+            <h5 class="card-title">Exclusive prices<span class="material-symbols-outlined">travel</span></h5>
+            <p class="card-text">This includes allowing travelers to book flights and other arrangements directly.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-3 text-center">
+        <div class="card border-success mb-3" style="max-width: 18rem;">
+          <div class="card-header">Hotels</div>
+          <div class="card-body text-success">
+            <h5 class="card-title">Handpicked Hotels <span class="material-symbols-outlined">bed</span></h5>
+            <p class="card-text">This includes allowing travelers to book hotels and other arrangements directly.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,131 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+makkah city
+{% endblock %}
+
+{% block content %}
+
+<div class="countainer-maka">
+    <div class="row">
+      <h1 class="display-1 d-flex justify-content-center pb-5 bg-success-subtle">Makkah City</h1>
+        <div class="col-6 text-center p-2">
+            <h1 class="display-5">The Heart of Islam</h1>
+            <h2 class="display-6">Where the soul finds peace</h2>
+            <p>Makkah is the holiest city in Islam, and it is home to the Kaaba, the cube-shaped structure that is believed to have been built by Abraham and Ishmael. Muslims from all over the world come to Makkah to perform the Hajj, the pilgrimage to the Kaaba. Makkah is also a popular destination for umrah, a smaller pilgrimage that can be performed at any time of year.</p>
+        </div>
+        <div class="col-6">
+            <div id="carouselExampleCaptions" class="carousel slide carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{% static 'images/mka2.jpg' %}" class="d-block w-100 h-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>The Makkah Clock Royal Tower</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/img-maka3.jpg' %}" class="d-block w-100 h-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Masjid al-Haram Courtyard</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/maka-img2.jpg' %}" class="d-block w-100 h-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Masjid alHaram, Makkah</h5>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+</div>
+<hr>
+    <div class="text-success">
+    </div>
+
+
+    <div class="box-feature">
+      <div class="row p-5 m-5">
+        <div class="card-group">
+          <div class="card">
+            <img src="{% static 'images/food.jpg' %}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title display-4">Best Food</h5>
+              <p class="card-text">Makkah is a vibrant city with a diverse culinary scene. There are restaurants serving everything from traditional Saudi dishes to international cuisine.<br>Discover now!</p>
+              <p class="card-text"><small class="text-body-secondary"><a href="https://www.tripadvisor.com/Restaurants-g293993-Mecca_Makkah_Province.html" class="btn btn-outline-success">Discover</a></small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="{% static 'images/maka9.jpg' %}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title display-4">Peace</h5>
+              <p class="card-text">The heart of the Arabian Peninsula, nestled amidst the rugged mountains and vast deserts, lies the holy city of Mecca, a beacon of peace and tranquility for millions of Muslims around the world.</p>
+              <p class="card-text"><small class="text-body-secondary"><a href="https://www.tripadvisor.com/Attractions-g293993-Activities-Mecca_Makkah_Province.html" class="btn btn-outline-success">Discover</a></small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="{% static 'images/maka10.jpg' %}" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title display-4">Relaxing</h5>
+              <p class="card-text">The city of Mecca is home to a wide variety of hotels, catering to various budgets and needs.Book your Hotel in Makkah online. No reservation costs. Great rates. Read Real Guest Reviews.</p>
+              <p class="card-text"><small class="text-body-secondary"><a href="https://www.almosafer.com/en/travel/hotels/hotels-in-mecca-sa?msclkid=58491ec348fb1ae9d3b87b9af565f1a1&utm_source=bing&utm_medium=cpc&utm_campaign=SN-EN-KSA-HO-City-Mecca-Broad-Desktop&utm_term=hotels+in+Mecca&utm_content=Mecca-hotels" class="btn btn-outline-success">Discover</a>
+              </small></p>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    
+    </div>
+    
+
+<div class="box-riyadh d-flex justify-content-center align-items-center m-5 p-5">
+  <div class="row">
+    <div class="display-3">.About Makkah city</div>
+    <div class="col-6">
+      <figure class="figure">
+        <img src="{% static 'images/mka.jpg' %}" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">Masjid alHaram, Makkah</figcaption>
+      </figure>
+      <p>Mecca, the holy city in Saudi Arabia is believed to be the centre of the Islamic world. The journey to Mecca as the Hajj is popular to the Muslims all over the world but the Mecca travel is forbidden for non-Muslims. There are billions of people coming to Mecca for Hajj from all over the world. The Hajj in Mecca is the largest pilgrimage in the world.
+        The Mecca city is Saudi Arabia is increasingly called Makkah. It is similar to the pronunciation of the Arabic word than does the English translation called Mecca. Non-Muslims are not permitted to enter the premises of Mecca, Saudi Arabia at any time of the year due to the fact that the Mecca travel and the Hajj are only intended for Muslims. It has happened in the past that several non-Muslims have entered Mecca; the penalties of it are quite harsh including deportation and jail time.</p>
+        <p>Tourism in Mecca involves some advance planning. There is a special visa required by every Muslim who wishes to make the pilgrimage to Mecca. There is a valid visa required to enter the Hajj grounds. In case of Saudi citizens, permission is necessary.</p>
+    </div>
+    <div class="col-6">
+      <figure class="figure">
+        <img src="{% static 'images/tower.jpg' %}" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">The Makkah Clock Royal Tower.</figcaption>
+      </figure>
+    </div>
+    <div class="col-4">
+    </div>
+  </div>
+</div>
+
+<div class="vid-box d-flex justify-content-center align-items-center m-5 p-5">
+  <div class="row">
+    <div class="col-6 p-4">
+      <iframe class="vid-makkah p-3" width="560" height="315" src="https://www.youtube.com/embed/C3E-uSOA8BA?si=VgZw9Z53IrhT2p3Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="col-6 p-4">
+      <h3 class="display-5">.Video about Makkah city</h3>
+      <p>Mecca, the holy city in Saudi Arabia is believed to be the centre of the Islamic world. The journey to Mecca as the Hajj is popular to the Muslims all over the world but the Mecca travel is forbidden for non-Muslims. There are billions of people coming to Mecca for Hajj from all over the world. The Hajj in Mecca is the largest pilgrimage in the world.</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

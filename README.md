@@ -10,7 +10,6 @@
 - A paragraph about the tourism in Saudi Arabia in General
 - A list of cities pages with links to them (the pages are listed down below)
 
-
 #### "city/Riyadh/"
 - Title of city with a catchy phrase
 - A Gallery of images (you can use a Carousel) for the city.

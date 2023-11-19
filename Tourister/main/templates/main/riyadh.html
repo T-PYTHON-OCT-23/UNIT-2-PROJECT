@@ -1,0 +1,139 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+Riyadh city
+{% endblock %}
+
+{% block content %}
+<div class="countainer-maka">
+    <div class="row">
+      <h1 class="display-1 d-flex justify-content-center pb-5 bg-success-subtle">Riyadh City</h1>
+        <div class="col-6 text-center p-5">
+            <h1 class="display-5">The Heart of Arabia</h1>
+            <h2 class="display-6">Where tradition meets modernity</h2>
+            <p> Riyadh, the capital of Saudi Arabia, is a city of contrasts. It is a modern metropolis with a rich history and culture. Riyadh is home to some of the world's tallest skyscrapers, as well as ancient mosques and palaces. The city is also a major center for business and finance. In recent years, Riyadh has been investing heavily in its infrastructure and tourism industry. As a result, the city is now more attractive to visitors from around the world.</p>
+        </div>
+        <div class="col-6">
+            <div id="carouselExampleCaptions" class="carousel slide carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{% static 'images/img-ryd9.jpg' %}" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Riyadh boulevard</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/img-ryd12.jpg' %}" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Masmak Fortress, Riyadh</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/kafd.jpg' %}" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>King Abdullah Financial District</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/ryd1.jpg' %}" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Kingdom Centre, Riyadh.</h5>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="box-feature">
+  <div class="row p-5 m-5">
+    <div class="card-group">
+      <div class="card">
+        <img src="{% static 'images/rydfood.jpg' %}" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title display-4">Best Food</h5>
+          <p class="card-text">Riyadh is a vibrant city with a diverse culinary scene. There are restaurants serving everything from traditional Saudi dishes to international cuisine.</p>
+          <p class="card-text"><small class="text-body-secondary"><a href="https://www.tripadvisor.com/Restaurants-g293995-Riyadh_Riyadh_Province.html" class="btn btn-outline-success">Discover</a></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/ryd.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title display-4">Activities</h5>
+          <p class="card-text">Riyadh, the capital of Saudi Arabia, offers a diverse range of activities and attractions for visitors of<br> all interests.</p>
+          <p class="card-text"><small class="text-body-secondary"><a href="https://www.visitsaudi.com/" class="btn btn-outline-success">Discover</a></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/hotel.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title display-4">Relaxing</h5>
+          <p class="card-text">Riyadh is a city with a wide range of hotels to suit all budgets and preferences.Search Now! Book your Hotel in Riyadh online.</p>
+          <p class="card-text"><small class="text-body-secondary"><a href="https://www.booking.com/luxury/city/sa/riyadh-sa.en-gb.html?aid=852815&label=msn-82XZcNMrfkEjYODAcM25QQ-80264448398351%3Atikwd-17265219529%3Aloc-216%3Aneo%3Amte%3Alp143180%3Adec%3Aqsbest%20hotels%20in%20riyadh&utm_campaign=Luxury%20-%20Saudi%20Arabia&utm_medium=cpc&utm_term=82XZcNMrfkEjYODAcM25QQ&msclkid=4798e2eefaf913c6dfd587b73b0c71f0&utm_source=bing&keep_landing=1&sid=15bf95d55ce2b1ba3f44d6f85c939cb5" class="btn btn-outline-success">Discover</a></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="box-riyadh d-flex justify-content-center align-items-center m-5 p-5">
+  <div class="row">
+    <div class="display-3">.About Riyadh city</div>
+    <div class="col-6">
+      <figure class="figure">
+        <img src="{% static 'images/ryd1.jpg' %}" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">Kingdom Centre, Riyadh.</figcaption>
+      </figure>
+      <p>Life in Riyadh is concentrated around the city’s more than 4,000 mosques and its numerous busy shopping centres. The city’s central core and its many souks (marketplaces) attract heavy pedestrian traffic, emphasizing the city’s intense feeling of vitality. As residents of a major city in a mainly Muslim (see Islam) country, Riyadh’s inhabitants adhere to a number of social norms that include segregation of the sexes and the need to protect the privacy of the family. Recreational activities are often a family affair, and large public gatherings are mainly restricted to male attendants. However, many activity centres allow women and families to attend at special times or in reserved areas.</p>
+      <p>Riyadh’s physical layout is dominated by its street system—a highly defined grid made up of 1.25-mile by 1.25-mile (2-km by 2-km) square blocks—which provides a network across the cityscape. This grid system is navigable, but it is also considered by some to be confining, because of its regimented compartmentalization of the city’s communities and neighbourhoods.</p>
+    </div>
+    <div class="col-6">
+      <figure class="figure">
+        <img src="{% static 'images/img-kafd.jpg' %}" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">King Abdullah Financial District, Riyadh.</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+
+<div class="vid-box d-flex justify-content-center align-items-center m-5 p-5">
+  <div class="row">
+    <div class="col-6 p-4">
+      <iframe class="vid-riyadh p-3" width="560" height="315" src="https://www.youtube.com/embed/-ht6pLR3vcY?si=b9DEJo1J9bjG2k7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="col-6 p-4">
+      <h3 class="display-5">.Video about Riyadh city</h3>
+      <p>Once a walled city, Riyadh is one of the wealthiest cities in the world. It is home to Saudi Arabia's best museums, the UNESCO Heritage site of Diriyah, Masmak Fortress and the Murabba Palace, among other major attractions. Riyadh is also home to world-class designer stores, boutiques, and spectacular fine-dining restaurants.</p>
+      <h6>You can discover more activites in Riyadh by link below:</h6>
+      <a href="https://www.visitsaudi.com/" class="btn btn-outline-success">Discover</a>
+    </div>
+  </div>
+</div>
+
+<div class="activite-box">
+  <div class="row">
+    <div class="col">
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+

@@ -1,0 +1,138 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+AlUla city
+{% endblock %}
+
+{% block content %}
+
+<div class="countainer-maka">
+    <div class="row">
+        <h1 class="display-1 d-flex justify-content-center pb-5 bg-success-subtle">AlUla City</h1>
+        <div class="col-6 text-center p-5">
+          <h1 class="display-5">Where History Whispers</h1>
+          <h2 class="display-6">Unveiling the Mysteries of the Past</h2>
+          <p>AlUla, a captivating UNESCO World Heritage Site nestled in the northwest of Saudi Arabia, is a mesmerizing land where ancient history intertwines with breathtaking natural beauty. Once a flourishing crossroads of civilizations, AlUla boasts a rich tapestry of archaeological wonders, including the Nabataean tombs carved into the sandstone cliffs, the awe-inspiring Mada'in Saleh, and the enchanting Elephant Rock Formation.</p>
+          </div>
+        <div class="col-6">
+            <div id="carouselExampleCaptions" class="carousel slide carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{% static 'images/img-ula.jpg' %}" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Elephant Mountain, AlUla.</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/mraya.jpg' %}" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Maraya, AlUla.</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/hegra.jpg' %}" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Hegra, Alula.</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/oasis.jpg' %}" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>The Oasis, Alula.</h5>
+                      <h5></h5>
+                    </div>
+                  </div>
+                  
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+</div>
+
+<div class="box-feature">
+  <div class="row p-5 m-5">
+    <div class="card-group">
+      <div class="card">
+        <img src="{% static 'images/ulafood.jpg' %}" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title display-4">Best Food</h5>
+          <p class="card-text">AlUla is a vibrant city with a diverse culinary scene. There are restaurants serving everything from traditional Saudi dishes to international cuisine.</p>
+          <p class="card-text"><small class="text-body-secondary"><a href="https://www.tripadvisor.com/Restaurants-g1802184-AlUla_Al_Madinah_Province.html" class="btn btn-outline-success">Discover</a></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/ula8.jpg' %}" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title display-4">Adventures</h5>
+          <p class="card-text">AlUla is a captivating destination in Saudi Arabia, offering a wealth of historical and cultural attractions, stunning natural landscapes, and adventure activities.</p>
+          <p class="card-text"><small class="text-body-secondary"><a href="https://www.experiencealula.com/" class="btn btn-outline-success">Discover</a></small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="{% static 'images/ula9.jpg' %}" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title display-4">Relaxing</h5>
+          <p class="card-text">AlUla is a city with a wide range of hotels to suit all budgets and preferences.Search Now! Book your Hotel in AlUla online.</p>
+          <p class="card-text"><small class="text-body-secondary"><a href="https://www.booking.com/city/sa/al-ula.en.html?aid=303948;label=al-ula-8NLpxtMaLVvdon_CoNRBrgS528791912869:pl:ta:p1:p2:ac:ap:neg:fi:tiaud-2009482408685:kwd-932686315826:lp1012088:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9Yf5EcukO1MOGLSSAuId8ToA;ws=&gad_source=1&gclid=CjwKCAiAgeeqBhBAEiwAoDDhn4dhuXHEYCs4GODQ8lYrfF2ZCHIafQZEw3CHJVdFfDEQLPUpoCI4uxoChb8QAvD_BwE" class="btn btn-outline-success">Discover</a></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="box-riyadh d-flex justify-content-center align-items-center m-5 p-5">
+  <div class="row">
+    <div class="display-3">.About AlUla city</div>
+    <div class="col-6">
+      <figure class="figure">
+        <img src="{% static 'images/img10.jpg' %}" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">Hegra,AlUla.</figcaption>
+      </figure>
+      <p>For thousands of years, northwest Saudi Arabia attracted people who came to take advantage of the abundant resources offered by its fertile oases.
+
+        AlUla was one of them, and became a vital crossroads along the famous incense-trading routes running from southern Arabia, north into Egypt, and beyond. With oases dotting the area, it offered a much-needed respite for weary travellers, becoming a popular place to rest, commune and recharge.
+        
+        AlUla was also capital of the ancient kingdoms of Dadan and Lihyan, which controlled the caravan trade. Hegra, a UNESCO World Heritage Site, was the principal southern city of the Nabataean kingdom, famed for its spectacular monumental tombs. Today, Old Town AlUla is an abandoned labyrinth of streets tightly packed to create a defensive wall, and seemingly built over an ancient settlement.
+        
+        This largely undiscovered expanse holds a timeless mystery that has been carried through its complex history. Layer upon layer of human history and a wealth of natural wonders are waiting to be explored, from dramatic rock formations and sand-swept dunes to archaeological ruins that trace the lives of the ancient cultures who built cities here.</p>
+    </div>
+    <div class="col-6">
+      <figure class="figure">
+        <img src="{% static 'images/ula4.jpg' %}" class="figure-img img-fluid rounded">
+        <img src="{% static 'images/ula5.jpg' %}" class="figure-img img-fluid rounded">
+        <figcaption class="figure-caption">banyan tree AlUla.</figcaption>
+      </figure>
+    </div>
+    <div class="col-4">
+    </div>
+  </div>
+</div>
+
+<div class="vid-box d-flex justify-content-center align-items-center m-5 p-5">
+  <div class="row">
+    <div class="col-6 p-4">
+      <iframe class="vid-alula p-3" width="560" height="315" src="https://www.youtube.com/embed/qv9Mer5syhE?si=C-Gy3TOzF_kEPD6z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="col-6 p-4">
+      <h3 class="display-5">.Video about Alula city</h3>
+      <p>A crossroads of civilisations and oasis city on incense-trading routes, people have inhabited AlUla for thousands of years. By preserving its rich heritage and continuing to flourish as a rural tourist destination, it has been awarded Best Tourism Village by the United Nations World Tourism Organization.</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

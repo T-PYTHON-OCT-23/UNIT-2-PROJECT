@@ -1,0 +1,383 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    width: auto;
+    height: auto;
+}
+
+
+.top-bar-base .header{
+    display: flex;
+    align-items:center;
+    justify-content:end;
+}
+
+.header{
+    display: flex;
+    align-items: end;
+}
+
+.header img{
+    width: 120px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.header-sec{
+    font-family: 'Noto Serif', serif;
+    padding-right: 3%;
+    display: flex;
+    justify-items:start;
+    gap: 2rem;
+}
+
+.paragraph{
+    margin: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+.card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12rem;
+}
+
+
+
+.title-box{
+    font-family: 'Noto Serif', serif;
+    font-size: 50%;
+    color:black;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom: 20%;
+
+}
+
+
+.container{
+    display: flex;
+    background-size: cover;
+    
+}
+
+.box-para{
+position: relative;
+color: black;
+font-size: 15px;
+}
+
+.box-para::before{
+    background-color:darkolivegreen;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.3;
+
+}
+
+.box-jeddah{
+    padding: 100px;
+}
+
+.countainer-maka{
+    padding: 100px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.logo-name img{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.wrapper {
+    padding: 24vh 10vw;
+    padding-bottom: 10vh;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    width: 100%;  
+}
+
+.homepage-content {
+    height: 100vh;
+    display: grid;
+    position: relative;
+    background-color:lightblue;
+
+}
+
+
+.homepage-content::before{
+    background-image: url('/static/images/background5.jpg');
+    background-size: cover;
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 0.6;
+
+}
+
+.sub-content{
+    color:black;
+    font-family: 'Noto Serif', serif;
+    padding-bottom: 10%;
+    padding-left: 0px;
+    text-align:left;
+    isolation: isolate;
+}
+
+.box-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:99px;
+    margin-right: 99px; 
+    margin-top: 4% ;
+    padding-bottom: 5%;
+    gap: 4rem;
+}
+
+.box-serveic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.our-services{
+    padding-top: 10%;
+    margin:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    background-color:cadetblue;
+    margin-top: 100px;
+    padding: 20px 0;
+}
+
+.container-footer{
+    max-width: 1170px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom:35px ;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom:-10px;
+    background-color:red;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration:none ;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left:8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height:40px ;
+    width:40px ;
+    background-color: rgba(33, 30, 30, 0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+/*responsive*/
+@media(max-width:767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width:574px){
+    .footer-col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+}
+
+.sub-content-jed h5{
+    text-decoration:none;
+    color:black;
+    font-size: 50px;
+}
+
+h5:hover{
+    color: chocolate;
+}
+
+header{
+    position: relative;
+}
+
+header::before{
+    position: absolute;
+    background-size: cover;
+    background-color: darkolivegreen;
+    content: '';
+    inset: 0;
+    opacity: 0.3;
+
+}
+
+.card-img-top{
+    height:200px;
+}
+
+/*overlay*/
+.container-test {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    display: block;
+    width: 100px;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:cadetblue;
+    overflow: hidden;
+    width: 0;
+    height:20%;
+    transition: 4s ease;
+  }
+  
+  .container-test:hover .overlay {
+    width: 100%;
+  }
+  
+  .text {
+    white-space: nowrap; 
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+.vid-riyadh, .vid-makkah, .vid-jeddah, .vid-alula{
+    border:bisque solid;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-sa{
+    width:80%;
+    height:auto;
+}
+
+.para1, .para2{
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.img-about-us{
+    width:100%;
+    height: auto;
+    padding: 30px;
+    border: wheat;
+    border-radius: 70px;
+}
+
+.service{
+    padding-bottom: 60px;
+}
+
+.title{
+    padding-left:10px;
+}
+
+.sub-content p{
+    border-radius:10px;
+}
+
+
