@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}  {% endblock %}</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        
+        .navbar .d-flex {
+            margin-left: 490px; /* تقريب */
+            
+        }
+        .beautiful-text {
+        
+        background-size: 100%;
+        border-radius: 15px;
+        text-align: center; /* ضع النص في الوسط */
+        padding: 10px; /* إضافة بعض المساحة حول النص */
+        margin: 20px auto; /* إضافة بعض المساحة حول الإطار وجعله في الوسط */
+        width: 50%; /* عرض الإطار */
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* إضافة ظل للإطار */
+        font-size: 24px; /* حجم الخط */
+        font-weight: bold; /* جعل النص ثخين */
+        }
+        h5 {
+    display: block;
+    font-family: 'Arial', sans-serif;
+    font-size: 27px;
+    color: #0c0202;
+    background-color: rgb(187, 195, 195);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+        .beautifu-text {
+        
+        background-size: 100%;
+        border-radius: 15px;
+        text-align: center; /* ضع النص في الوسط */
+        border: 2px solid #2c3e50; /* إضافة إطار */
+        padding: 10px; /* إضافة بعض المساحة حول النص */
+        margin: 20px auto; /* إضافة بعض المساحة حول الإطار وجعله في الوسط */
+        width: 50%; /* عرض الإطار */
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* إضافة ظل للإطار */
+        font-size: 24px; /* حجم الخط */
+        font-weight: bold; /* جعل النص ثخين */
+        }
+        /* تأثيرات CSS لتحسين الجاذبية */
+        body {
+            font-family: Arial, sans-serif;
+    background-image: url('/static/img/1212.jpg');
+    background-size: 100% 100%;
+            /* تأثير تتلاشى */
+            animation: fadein 2s;
+        }
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+        /* الألوان المتناسقة */
+        .navbar {
+        
+            text-emphasis-color: red;
+        
+            background-color: #3d5976;
+            font-size: 20px;
+            padding: 1px;
+            
+        }
+        
+        
+        .tourism-info {
+            color: #180707; /* لون النص */
+        }
+        
+        .card {
+        /* إضافة ظل للبطاقة */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 5px; /* جعل الحواف منحنية */
+    }
+
+    .card:hover {
+        /* تكبير البطاقة وتغيير الظل عند التحوم */
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+    }
+
+    .card img {
+        /* جعل الحواف العلوية منحنية */
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .card-title {
+        /* تغيير لون العنوان */
+        color: #2c3e50;
+    }
+
+    /* إضافة تأثير تحوم باستخدام CSS Transitions و Animations */
+    .card:hover {
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <div class="d-flex">
+                    <div id="google_translate_element"></div>
+                    <img src="/static/img/900.svg" alt="Logo 4" class="img-fluid logo me-3" style="width: 70px;">
+                    <img src="/static/img/log3.svg" alt="Logo 5" class="img-fluid logo me-3" style="width: 80px;">
+                    <img src="/static/img/MT-2030.svg" alt="Logo 3" class="img-fluid logo me-3" style="width: 350px;">
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle me-3" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                القائمة
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="https://mt.gov.sa/about/ministry-of-tourism">عن الوزارة</a></li>
+                                <li><a class="dropdown-item" href="https://mt.gov.sa/policies-regulations/licenses-procedures">تراخيص الأنشطة السياحية</a></li>
+                                <li><a class="dropdown-item" href="https://mt.gov.sa/e-services">الخدمات الالكترونية</a></li>
+                                <li><a class="dropdown-item" href="https://mt.gov.sa/human-capital/overview">التدريب والتطوير</a></li>
+                                <li><a class="dropdown-item" href="https://mt.gov.sa/investment-and-attraction/overview">الاستثمار السياحي</a></li>
+                                <li><a class="dropdown-item" href="https://mt.gov.sa/tic/what-is-tic">مركز ذكاء الأعمال</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <div id="google_translate_element"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <script>
+            $(document).ready(function(){
+              $('.slider').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+              });
+            });
+            </script>
+            
+            
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement({pageLanguage: 'ar'}, 'google_translate_element');
+                }
+                </script>
+            
+                <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+            </body>
+    </header>
+    {% block content %}
+
+    
+    {% endblock %}
+</body>
+<footer class="text-center">
+  <p class="text-white">جميع الحقوق محفوظة © 2023</p>
+</footer>

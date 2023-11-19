@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/static/img/poi.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.text-center {
+   
+    font-family: 'Your Handwriting Font', cursive;
+}
+
+
+header {
+    color: #fff; /* Text color */
+    padding: 15px 0; /* Adjust padding as needed */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.menu a {
+    display: block;
+    margin-bottom: 10px;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.tour-title {
+    border: 2px solid #007bff; /* لون الحدود */
+    padding: 10px;
+    border-radius: 10px; /* شكل الحدود */
+    margin-top: 20px;
+    display: inline-block;
+    animation: scale-up 0.5s ease-in-out; /* الرسم المتحرك */
+}
+
+
+
+
+
+.container {
+    max-width: 960px;
+    margin: auto;
+}
+
+.list-group-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+
+
+
+.list-group-item img {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    border-radius: 10px;
+}

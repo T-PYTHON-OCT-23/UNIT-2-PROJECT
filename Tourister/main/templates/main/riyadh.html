@@ -1,0 +1,247 @@
+{% extends 'main/bootss.html' %}
+{% load static %}
+{% block title %} المعالم في الرياض {% endblock %}
+{% block content %}
+
+<style>
+    
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 35px;
+        }
+        .col-md-4 {
+            
+            max-width: 35%;
+            
+            
+            
+        }
+        .image-container {
+            position: relative;
+            width: 100%;
+            padding-top: 100%; /* 1:1 Aspect Ratio */
+            border-radius: 50%; /* Circular Container */
+            overflow: hidden; /* Hide anything outside of the container */
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Optional Shadow Effect */
+        }
+        .image-container img, .image-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .image-container video {
+            display: none;
+        }
+    .navbar .d-flex {
+            margin-left: 490px; /* تقريب */
+            
+        }
+     .navbar {
+            text-emphasis-color: red;
+        
+            background-color: #3d5976;
+            font-size: 20px;
+            padding: 1px;
+            
+        }
+               body {
+        font-family: Arial, sans-serif;
+        background-image: url('/static/img/1212.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        text-align: center; /* يجعل النص في الوسط */
+
+        }
+      
+      
+       
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+  
+    }
+    .card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card.religious-card .map-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0); /* لون الخلفية شفاف */
+        transform: translateY(100%) rotate(45deg);
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .card.religious-card:hover .map-container {
+        background-color: rgba(255, 255, 255, 0.8); /* لون الخلفية عند التحويم */
+        transform: translateY(0) rotate(0);
+    }
+
+
+ .image-container {
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+   
+
+</style>
+
+
+<body>
+    <p class="beautiful-text">المعالم في الرياض</p>
+    <div class="container">
+        <div class="row">
+            <!-- بطاقة السياحة الدينية -->
+            <div class="col-sm-6 col-md-4">
+                <div class="card religious-card">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3626.781357369541!2d46.71595532607396!3d24.63121955439498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f05a68ffb79b3%3A0xaf1c06c11a421767!2z2YLYtdixINin2YTZhdi12YXZg9iMINin2YTYp9mF2KfZhSDYqtix2YPZiiDYqNmGINi52KjYr9in2YTZhNmHINio2YYg2YXYrdmF2K_YjCDYp9mE2K_Zitix2KnYjCDYp9mE2LHZitin2LYgMTI2MzQ!5e0!3m2!1sar!2ssa!4v1700391094907!5m2!1sar!2ssa" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                    <img src="/static/img/Riyadh/908.jpg" class="card-img-top" alt="السياحة الدينية">
+                    <div>
+                               <h5 class="card-title"> 🏰 قلعة المصمك</h5>
+                               <p class="card-text">هي قلعة تاريخية تقع في قلب مدينة الرياض. تم بناؤها في القرن الثامن عشر، وكانت مقرًا للحكم السعودي في المدينة. اليوم، تعد القلعة متحفًا يروي تاريخ الرياض والمنطقة.</p>
+
+
+                                <p>......</p>
+                               </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card religious-card">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7255.86746050861!2d46.7158876721506!3d24.591483174705665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f0f9cea0fa919%3A0xdcfeade29d1ff802!2z2YjYp9iv2Yog2K3ZhtmK2YHYqQ!5e0!3m2!1sar!2ssa!4v1700391559015!5m2!1sar!2ssa" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                    <img src="/static/img/Riyadh/Z123.jpg" class="card-img-top" alt="السياحة الدينية">
+                    <div>
+                               <h5 class="card-title">🌲 وادي حنيفة</h5>
+                               <p class="card-text"> هو وادي تاريخي يمر عبر مدينة الرياض. يوفر الوادي مناظر طبيعية خلابة والعديد من الفرص الترفيهية، بما في ذلك المشي لمسافات طويلة وركوب الدراجات.</p>
+
+
+                                <p>......</p>
+                               </p>
+                    </div>
+                </div>
+            </div><div class="col-sm-6 col-md-4">
+                <div class="card religious-card">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116058.10640556227!2d46.849150056640624!3d24.630031899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f0508b81ddf49%3A0x77b1d8502803468a!2z2YXZhtiq2LLZhyDYt9ix2YrZgiDYp9mE2YXZhNmDINmB2YfYrw!5e0!3m2!1sar!2ssa!4v1700391955095!5m2!1sar!2ssa" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                    <img src="/static/img/Riyadh/X123.jpg" class="card-img-top" alt="السياحة الدينية">
+                    <div>
+                        <h5 class="card-title">🏞️🦌🦓🐪حديقة الملك فهد الوطنية</h5>
+                        <p class="card-text">هي حديقة وطنية تقع في شمال مدينة الرياض. تبلغ مساحة الحديقة حوالي 330 كيلومترًا مربعًا، وتضم مجموعة متنوعة من النباتات والحيوانات.</p>
+
+
+                                <p>.....</p>
+                               </p>
+                    </div>
+                </div>
+            </div><div class="col-sm-6 col-md-4">
+                <div class="card religious-card">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.456933181147!2d46.67597592607079!3d24.711188551217102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f02d3ee00e647%3A0x3bb9960e0269bbd4!2z2KjYsdisINin2YTZhdmF2YTZg9ip2Iwg2KfZhNi52YTZitin2Iwg2KfZhNix2YrYp9i2IDEyMjE0!5e0!3m2!1sar!2ssa!4v1700392538529!5m2!1sar!2ssa" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                    <img src="/static/img/Riyadh/V1234.jpg" class="card-img-top" alt="السياحة الدينية">
+                    <div>
+                        <h5 class="card-title">برج المملكة🗼</h5>
+                        <p class="card-text">هو برج تجاري يقع في وسط مدينة الرياض. يبلغ ارتفاع البرج 302 مترًا، وهو أحد أطول المباني في العالم. يوفر البرج إطلالة بانورامية خلابة على المدينة.</p>
+
+                                <p>.....</p>
+                               </p>
+                    </div>
+                </div>
+            </div><div class="col-sm-6 col-md-4">
+                <div class="card religious-card">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14505.20854259193!2d46.7106971!3d24.6477265!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f0455e175c5e1%3A0xfa7d1c7f096df805!2z2KfZhNmF2KrYrdmBINin2YTZiNi32YbZig!5e0!3m2!1sar!2ssa!4v1700392890704!5m2!1sar!2ssa" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                    <img src="/static/img/Riyadh/B1234.jpg" class="card-img-top" alt="السياحة الدينية">
+                    <div>
+                        <h5 class="card-title">مركز الملك عبد العزيز التاريخي🏛️</h5>
+                        <p class="card-text">هو مركز ثقافي يقع في وسط مدينة الرياض. يضم المركز العديد من المتاحف والمكتبات والمعارض الفنية</p>
+
+                                <p>.....</p>
+                               </p>
+                    </div>
+                </div>
+            </div>
+            
+</body>
+
+
+<hr style="border-top: 9px solid #3498db; margin-top: 50px; margin-bottom: 50px;">
+ 
+    <body>
+        <p class="beautifu-text">معرض الصور والفيديوهات</p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="tooltip" data-placement="top" title=" قلعت المصمك" onmouseover="playVideo('video1')" onmouseout="pauseVideo('video1')">
+                    <img src="/static/img/Riyadh/908.jpg" alt="مكة المكرمة 1">
+                    <video id="video1" src="/static/Rivi/MS.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="tooltip" data-placement="top" title=" وادي حنيفة" onmouseover="playVideo('video2')" onmouseout="pauseVideo('video2')">
+                    <img src="/static/img/Riyadh/Z123.jpg" alt="مكة المكرمة 2">
+                    <video id="video2" src="/static/Rivi/HAN.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="tooltip" data-placement="top" title=" حديقةالملك فهد" onmouseover="playVideo('video3')" onmouseout="pauseVideo('video3')">
+                    <img src="/static/img/Riyadh/X123.jpg" alt="مكة المكرمة 3">
+                    <video id="video3" src="/static/Rivi/FAHAD.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="tooltip" data-placement="top" title="برج المملكة " onmouseover="playVideo('video4')" onmouseout="pauseVideo('video4')">
+                    <img src="/static/img/Riyadh/V1234.jpg" alt="متحف مكة المكرمة">
+                    <video id="video4" src="/static/Rivi/KIN.mp4" type="video/mp4"></video>
+                </div>
+            </div>        
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="tooltip" data-placement="top" title="مركز الملك عبدالعزيز التاريخي" onmouseover="playVideo('video5')" onmouseout="pauseVideo('video5')">
+                    <img src="/static/img/Riyadh/B1234.jpg" alt="بئر زمزم ">
+                    <video id="video5" src="/static/Rivi/AZOZ.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    <script>
+    function playVideo(videoId) {
+        document.getElementById(videoId).style.display = 'block';
+        document.getElementById(videoId).play();
+    }
+    
+    function pauseVideo(videoId) {
+        document.getElementById(videoId).pause();
+        document.getElementById(videoId).style.display = 'none';
+    }
+    </script>
+</html>
+{% endblock %}

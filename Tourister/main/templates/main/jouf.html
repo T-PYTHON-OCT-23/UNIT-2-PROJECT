@@ -1,0 +1,249 @@
+{% extends 'main/bootss.html' %}
+{% load static %}
+{% block title %} المعالم في الجوف {% endblock %}
+{% block content %}
+
+<style>
+    
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 35px;
+        }
+        .col-md-4 {
+            
+            max-width: 35%;
+            
+            
+            
+        }
+        .image-container {
+            position: relative;
+            width: 100%;
+            padding-top: 100%; /* 1:1 Aspect Ratio */
+            border-radius: 50%; /* Circular Container */
+            overflow: hidden; /* Hide anything outside of the container */
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Optional Shadow Effect */
+        }
+        .image-container img, .image-container video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .image-container video {
+            display: none;
+        }
+    .navbar .d-flex {
+            margin-left: 490px; /* تقريب */
+            
+        }
+     .navbar {
+            text-emphasis-color: red;
+        
+            background-color: #3d5976;
+            font-size: 20px;
+            padding: 1px;
+            
+        }
+               body {
+        font-family: Arial, sans-serif;
+        background-image: url('/static/img/jouf/jo.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        text-align: center; /* يجعل النص في الوسط */
+
+        }
+      
+      
+       
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+  
+    }
+    .card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card.religious-card .map-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0); /* لون الخلفية شفاف */
+        transform: translateY(100%) rotate(45deg);
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .card.religious-card:hover .map-container {
+        background-color: rgba(255, 255, 255, 0.8); /* لون الخلفية عند التحويم */
+        transform: translateY(0) rotate(0);
+    }
+
+
+ .image-container {
+        position: relative;
+        width: 100%;
+        padding-top: 100%;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+   
+
+</style>
+
+
+<body>
+    <p class="beautiful-text">المعالم في الجوف</p>
+    <div class="container">
+        <div class="row">
+            <!-- بطاقة السياحة الدينية -->
+            <div class="col-sm-6 col-md-4">
+                <div class="card religious-card">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27245.078372097378!2d37.51850394300651!3d31.396631985611943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15101213e3f4be69%3A0x94a29a7842aa185a!2z2YPYp9mB!5e0!3m2!1sar!2ssa!4v1700404800018!5m2!1sar!2ssa" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                    <img src="/static/img/jouf/jo.jpg" class="card-img-top" alt="السياحة الدينية">
+                    <div>
+                               <h5 class="card-title"> 🏰 قصر كاف</h5>
+                               <p class="card-text">قصر كاف ، هو أحد الحصون التراثية القديمة المعروفة بجمال منظرها وفنها المعماري. يقع القصر على تلّ شمال شرقيّ قرية الكاف في القريات، التابعة لمنطقة الجوف، شمالي المملكة العربية السعودية، وتجاوره عدة مواقع سياحية، مثل: قرية كاف، وقلعة الصعيدي. </p>
+
+
+                                <p>......</p>
+                               </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card religious-card">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.528443569769!2d40.20456102584262!3d29.992979221009758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1572bba14ead2331%3A0x818109585b5e0381!2z2YLZhNi52Kkg2LLYudio2YQ!5e0!3m2!1sar!2ssa!4v1700405986742!5m2!1sar!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                    <img src="/static/img/jouf/j1.jpg" class="card-img-top" alt="السياحة الدينية">
+                    <div>
+                               <h5 class="card-title">🏯 قلعة زعبل</h5>
+                               <p class="card-text">قلعة أثرية ومعلم حضاري يزيد عمره عن عدة قرون
+                                بمساحة تصل إلى 5,600 متر، وعلى هضبة ترتفع عن الأرض 50 مترًا، شُيّدت قلعة زعبل ببناء رصين، وأساس متين، من الطين والحجر الرملي، لتكون من أقوى القلاع في عصرها؛ بهدف استخدامها حصنًا حربيًا لأغراض عسكرية، تتمثل في المراقبة والحماية من الأعداء. </p>
+
+
+                                <p>......</p>
+                               </p>
+                    </div>
+                </div>
+            </div><div class="col-sm-6 col-md-4">
+                <div class="card religious-card">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27693.18481057952!2d39.92917424793006!3d29.816709187287273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x150d2de63961041d%3A0x365b10036edc900b!2z2KjYrdmK2LHYqSDYr9mI2YXYqSDYp9mE2KzZhtiv2YQ!5e0!3m2!1sar!2ssa!4v1700405930356!5m2!1sar!2ssa" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                    <img src="/static/img/jouf/j2.jpeg" class="card-img-top" alt="السياحة الدينية">
+                    <div>
+                        <h5 class="card-title">🏞️بحيرة دومة الجندل</h5>
+                        <p class="card-text">بعمق يقارب 15 مترًا، وحجم يزيد عن مليون متر مكعب
+                            تكوّنت بحيرة دومة الجندل من تجمّع مياه الأمطار ومياه الزراعة، وتعد إحدى أهم معالم الجوف، فقد جمعت بين جمال المنظر وتعدد الأنشطة، فهي مقصد لكل من أراد الاستراحة في الهواء الطلق، أو ممارسة رياضة المشي حول البحيرة، أو الاستمتاع بيوم عائلي جميل.</p>
+
+
+                                <p>.....</p>
+                               </p>
+                    </div>
+                </div>
+            </div><div class="col-sm-6 col-md-4">
+                <div class="card religious-card">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14154452.528819056!2d58.61893965!3d29.98871460000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1572bbb8fbea2c97%3A0xae59aa2ad6e84cc7!2z2YXYtNix2YjYuSDYp9mE2LLZitiq2YjZhiDZiNin2YTYqNmK2YjYqiDYp9mE2YXYrdmF2YrYqQ!5e0!3m2!1sar!2ssa!4v1700406415557!5m2!1sar!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                    <img src="/static/img/jouf/j3.jpg" class="card-img-top" alt="السياحة الدينية">
+                    <div>
+                        <h5 class="card-title">اكبر مزرعة زيتون في العالم🫒</h5>
+                        <p class="card-text">وتضم أكبر مزرعة زيتون في العالم، تنتج سنوياً 10 آلاف طن من أجود أنواع زيت الزيتون. تستخدم في الجوف الطريقة المكثفة لزراعة الزيتون، حيث يزرع في مساحة 1 هكتار 1600 شجرة، تسقى عن طريق الري بالتنقيط..</p>
+
+                                <p>.....</p>
+                               </p>
+                    </div>
+                </div>
+            </div><div class="col-sm-6 col-md-4">
+                <div class="card religious-card">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3462.2626040310206!2d39.868220725851884!3d29.798956830162624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x150d2ee5277eca07%3A0xb59d12f66a824fec!2z2YXZh9ix2KzYp9mGINiq2YXZiNixINin2YTYrNmI2YE!5e0!3m2!1sar!2ssa!4v1700406963422!5m2!1sar!2ssa" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                    <img src="/static/img/jouf/j4.jpg" class="card-img-top" alt="السياحة الدينية">
+                    <div>
+                        <h5 class="card-title">مهرجان التمور في دومة الجندل🎉</h5>
+                        <p class="card-text">نظم المهرجان أمانة المنطقة ممثلة في بلدية دومة الجندل، وتستمر فعالياته لمدة 7 أيام في مدينة المعارض بمحافظة دومة الجندل.</p>
+
+                                <p>.....</p>
+                               </p>
+                    </div>
+                </div>
+            </div>
+            
+</body>
+
+
+<hr style="border-top: 9px solid #3498db; margin-top: 50px; margin-bottom: 50px;">
+ 
+    <body>
+        <p class="beautifu-text">معرض الصور والفيديوهات</p>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="tooltip" data-placement="top" title="اكبر مزرعة زيتون" onmouseover="playVideo('video1')" onmouseout="pauseVideo('video1')">
+                    <img src="/static/img/jouf/j3.jpg" alt="مكة المكرمة 1">
+                    <video id="video1" src="/static/img/jouf/big.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="tooltip" data-placement="top" title="قصر كاف" onmouseover="playVideo('video2')" onmouseout="pauseVideo('video2')">
+                    <img src="/static/img/jouf/jo.jpg" alt="مكة المكرمة 2">
+                    <video id="video2" src="/static/img/jouf/kaf.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="tooltip" data-placement="top" title="بحيرة دومة الجندل" onmouseover="playVideo('video3')" onmouseout="pauseVideo('video3')">
+                    <img src="/static/img/jouf/j2.jpeg" alt="مكة المكرمة 3">
+                    <video id="video3" src="/static/img/jouf/boha.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="tooltip" data-placement="top" title="قلعة زعبل" onmouseover="playVideo('video4')" onmouseout="pauseVideo('video4')">
+                    <img src="/static/img/jouf/j1.jpg" alt="متحف مكة المكرمة">
+                    <video id="video4" src="/static/img/jouf/zab.mp4" type="video/mp4"></video>
+                </div>
+            </div>        
+            <div class="col-md-4">
+                <div class="image-container" data-toggle="tooltip" data-placement="top" title="مهرجان التمور" onmouseover="playVideo('video5')" onmouseout="pauseVideo('video5')">
+                    <img src="/static/img/jouf/j4.jpg" alt="بئر زمزم ">
+                    <video id="video5" src="/static/img/jouf/mahr.mp4" type="video/mp4"></video>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+    <script>
+    function playVideo(videoId) {
+        document.getElementById(videoId).style.display = 'block';
+        document.getElementById(videoId).play();
+    }
+    
+    function pauseVideo(videoId) {
+        document.getElementById(videoId).pause();
+        document.getElementById(videoId).style.display = 'none';
+    }
+    </script>
+</html>
+{% endblock %}

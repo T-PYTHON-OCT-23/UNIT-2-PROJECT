@@ -1,0 +1,73 @@
+{% extends 'main/bootss.html' %}
+{% load static %}
+{% block title %} abha {% endblock %}
+{% block content %}
+<style>
+    body {
+        background-image: url('/static/img/Riyadh/Riyadh5.jpg'); /* استبدل هذا بمسار الصورة الخاصة بك */
+        background-size: 100% 100%;
+    }
+    footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+<body>
+
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center mb-4">
+                <p class="font-weight-bold">مرحبًا بك في موقعنا. يرجى اختيار المنطقة التي ترغب في معرفة المزيد عنها:</p>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <a href="/riyadh/">
+                        <img src="/static/img/Riyadh/Riyadh4.jpg" class="card-img-top img-thumbnail" alt="الرياض">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">الرياض</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <a href="/Abha/">
+                        <img src="/static/img/Abha/abha1.jpeg" class="card-img-top img-thumbnail" alt="ابها">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">ابها</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <a href="/AlUla/">
+                        <img src="/static/img/AlUla/AlUla1.jpg" class="card-img-top img-thumbnail" alt="العلا">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">العلا</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="card">
+                    <a href="/Mekkah/">
+                        <img src="/static/img/Mekkah/Mekkah1.jpg" class="card-img-top img-thumbnail" alt="مكة المكرمة">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title text-center">مكة المكرمة</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center">
+        <p class="text-black">جميع الحقوق محفوظة © 2023</p>
+    </footer>
+</body>
+{% endblock %}
