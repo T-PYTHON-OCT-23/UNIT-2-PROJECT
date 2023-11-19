@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;   
+}
+
+body{
+    overflow-x: hidden;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p a {
+    color: black;
+    font-size: medium ;
+}
+
+h1, h2, h3, h4, h5 ,h6{
+    font-size: medium;
+}
+
+.logo{
+    font-size: 3rem;
+    transition: all 0.4s ease-in;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.signup-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar{
+    font-size: medium;
+    color:black;
+    font-weight: bold;  
+}
+
+.footer{ 
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        color: black;
+        text-align: center;
+}
+
+.vid1{
+        display: flex;
+        justify-content: center;
+      }
+
+.carousel-caption{
+        bottom: 220px;
+        z-index: 2;
+    }
+.carousel-caption h6{
+        font-size: 30px;
+        letter-spacing: 2px;
+        margin-top: 25px;
+        z-index: 1;
+    }
+.carousel-caption p{
+        width: 60%;
+        margin: auto;
+        font-size: 18px;
+        line-height: 1.9;
+        z-index: 1;
+    }
+.carousel-inner::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.7); 
+    }
+    
+.carousel-item img {
+    height: 40%;
+    width: 100vw;
+   object-position: center;
+   object-fit: cover;
+}
+
+.bg-image{
+background-image: url('https://media.cntraveller.in/wp-content/uploads/2022/11/Copy-of-Untitled-600-%C3%97-600px-640-%C3%97-480px-1280-%C3%97-720px-1280-%C3%97-720px-640-%C3%97-480px-1280-%C3%97-720px-600-%C3%97-600px-640-%C3%97-480px-2700-%C3%97-1700px-700-%C3%97-600px-1920-%C3%97-1080px-1920-%C3%97-1080px-5.jpg');
+height: 100vh;  
+width: 100vw;  
+background-size: cover;
+position:relative;
+filter: brightness(0.9);
+
+}
+.about-container{
+    color:white;
+    font-size: large; 
+}
+
+.contact-img-container img {
+    height: 100vh;  
+    width: 100vw;  
+    object-fit: cover;
+    z-index: 0;
+}
+
+.contact-container{
+    padding:5%;
+    font-size: medium;
+}
+
+.center {
+    position: absolute;
+    bottom: 300px;
+    left: 50px;
+    color: white;
+    font-weight:bolder;
+    font-size: 350px;
+}
+
+.riyadh-container img {
+    height: 100vh;  
+    width: 100vw;  
+    object-fit:cover;
+    font-size: large;
+}
+
+.cities-content-container{
+    padding: 10px;
+    margin: 40px;
+    padding-left: 70px;
+    padding-right: 90px;
+}
+
+.card-img {
+    width: 240px;
+    height: 240px;
+}
+
+.makah-container video{
+    height: 100vh;  
+    width: 100vw; 
+    object-fit: cover;
+}
+
+#makah img {
+    height:100vh;
+    width: 100vw;
+    object-position: center;
+    object-fit: cover;
+ }  
+#makah  h5{
+    color:white;
+    font-size: 80px;
+
+}
+
+.center-madina {
+    position: absolute;
+    bottom: 190px;
+    left: 70px;
+    color: white;
+    font-weight:bolder;
+    font-size: 130px;
+
+}
+.uhod-container img{
+    height:70vh;
+    width: 80vw;
+    object-position: center;
+    object-fit: cover;   
+}
+.madina-container video{
+    height:70vh;
+    width: 85vw;
+    object-position:center;
+}
+
+#alula img {
+    height:85vh;
+    width: 80vw;
+    object-position: center;
+    object-fit: cover;
+ }  
+#alula  h5{
+    color:white;
+    font-size: 50px;
+
+}
+
+.small{
+    font-size:small ;
+}
+
+.large{
+    font-size:large ;
+}
+
+a{
+    text-decoration: none;
+}

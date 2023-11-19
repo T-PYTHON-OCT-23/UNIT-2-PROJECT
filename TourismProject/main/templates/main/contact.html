@@ -1,0 +1,38 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %} ContactUs {% endblock %}
+
+{% block content %}
+
+<div class="contact-img-container">
+    <img src="\static\img\Palm.jpg">
+    <div class="center"><h1>How To Connect</h1></div>
+</div>
+
+<div class="contact-container">
+
+      <h3>Send us a message by completing the contact form below</h3>
+    <form >
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" required ><br><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" required><br><br>
+
+        <label for="fname">Email:</label><br>
+        <input type="email" id="mail" required><br><br>
+
+        <label for="comment">Message</label><br>
+
+        <textarea placeholder="Enter your message here..." rows="3" cols="50" name="comment" required ></textarea>
+        <br><br>
+
+        <input type="submit"  value="Send Message">
+  </form>
+  
+</div>
+
+
+{% endblock %}
+

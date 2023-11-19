@@ -1,0 +1,86 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %} AlUla {% endblock %}
+
+{% block content %}
+
+<div class="contact-img-container">
+    <img src="\static\img\aula\sly.jpeg" class="img-fluid object-fit-fill" >
+    <div class="center-madina">
+        <h1>The Natural Wonders of <b>AlUla </b></h1>
+        <p style="font-size: large;"> a Glamorous Destination that Makes Your Eyes Sparkle</p>
+    </div>
+</div>
+
+<div class="cities-content-container"> 
+   
+<h1>Tourism In AlUla</h1>
+<br>
+    <p><b>Elephant Rock (Jabal AlFil) </b><br>
+        Elephant Rock (Jabal AlFil), is an amazing geomorphological wonder located 11km northeast of AlUla. A spectacular example of natural erosive forces of water and wind over a period of millions of years, this natural wonder rises 171ft into the air with mountains looming in the background. picture down below.
+       
+
+        <br><br><b>Raqasat (Dancing Rocks) </b><br>
+        Jabal Al Rukkab, located in the Ragasat Valley, features spectacular pieces of natural art including fantastic rock formations, a network of canyons and the labyrinth of valleys running through the massif. Among these, discover a silhouette of three spiraling rock formations that are dubbed as the Raqasat (Dancing Rocks), which are sculpted by sand blown by fierce winds.picture down below
+        If you crave more adventure, discover the 2,000-year-old petroglyphs on the rocks in Jabal Al Rukkab.<br>
+        
+        <br><b>Harrat Uwayrid </b><br>
+        Towering mesas with wide expanses of igneous basalt columns in the west add to the aesthetics of AlUla. This iconic landscape was formed over the years by a then-active volcano.picture down below
+   <br><br> </p>
+
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner" id="alula">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="\static\img\aula\Elephant Rock (Jabal AlFil).jpg" class="d-block w-100" alt="Elephant Rock (Jabal AlFil)">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Elephant Rock (Jabal AlFil)</h5>
+            </div>
+          </div>
+          <div class="carousel-item " data-bs-interval="2000">
+            <img src="\static\img\aula\aula face.jpg" class="d-block w-100" alt="mountin">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mountion</h5>
+            </div>
+          </div>
+          <div class="carousel-item" >
+            <img src="\static\img\aula\Harrat.jpg" class="d-block w-100" alt="Harrat Uwayrid ">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Harrat Uwayrid </h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br><br>
+
+
+  <div class="cities-content-container" style="padding-left: 0px;">
+    <h2>Saudi vision & AlUla</h2>
+    <p>
+    Discover the extraordinary heritage of AlUla – a living museum of sandstone outcrops, historic developments, and preserved tombs.
+    Home to boundless cultural treasures, including Saudi Arabia’s first UNESCO World Heritage site, AlUla is transforming into a once-in-a-lifetime experience for visitors from around the world.
+    </p><br>
+    <video controls autoplay muted>
+        <source src="\static\vid\ula.Vision 2030.mp4" class=" object-fit-contain border rounded" >    
+    </video>
+    </div>
+
+
+</div>
+{% endblock %}
+
