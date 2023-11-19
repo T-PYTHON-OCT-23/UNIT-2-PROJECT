@@ -1,0 +1,137 @@
+body{
+    overflow-x: hidden;
+}
+.nav-item a{
+    font-weight: bold;
+    font-size: 20px
+}
+h1,h2,h3.h4{
+    font-family: 'Libre Baskerville', serif;
+}
+
+.p1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.ttt{
+    background-color: rgb(168, 168, 168,0.8);
+}
+
+.top-space {
+    padding-top: 8vh;
+}
+.text{
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 0.4rem;
+    color: black; 
+}
+
+.card img{
+    height:250px ;
+    background-size:cover;
+
+}
+
+.content-carousel img{
+height:350px;
+background-size:cover;
+border-radius: 20px;
+}
+.content-carousel{
+background-color:rgb(222, 184, 135,0.4);
+border-radius: 40px;
+}
+.places{
+    background-color: rgb(168, 168, 168,0.8);
+    border-radius: 40px;
+}
+.video-content{
+   background-color:rgb(222, 184, 135,0.4);
+    border-radius: 40px;
+    width:800px ;
+    height:400px;
+}
+#carouselExampleSlidesOnly {
+    position: absolute;
+    background-size: cover;
+    top:0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+}
+
+#carouselExampleSlidesOnly .carousel-item img {
+    height: 140vh;
+    width: 100vw;
+}
+
+.h5-1{
+    background-color:rgba(0, 0, 0, 0.5);
+    display: inline;
+    border-radius: 20px;
+}
+
+.about-us {
+    min-height: 100vh;
+}
+
+.about-us img{
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+}
+.about-us-content{
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 0.4rem;
+}
+p{
+font-weight: bold;
+
+}
+
+.container-content{
+    background-color: rgb(168, 168, 168,0.3);
+}
+.contact_content img{
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+}
+.main-contact{
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+.contact_content{
+    min-height: 100vh;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+}
+.icon a{
+    color: black;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding:15px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.h5-title{
+    color: brown;
+}
+
+
+

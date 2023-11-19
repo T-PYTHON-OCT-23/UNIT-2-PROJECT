@@ -1,0 +1,103 @@
+{% extends 'main/base.html' %}
+{%load static %}
+{%block title %}Mecca{% endblock%}
+{% block content %}
+<div class="container-content pt-5">
+<div class ='main-content d-flex justify-content-between mt-5 mx-4'>
+<div class="main-subcontent">
+<h1 class="text-center">Mecca</h1>
+<h2 class="text-center">The Heart of Islam</h2>
+<p class="p1 mx-3 mt-3"> Mecca al-Mukarramah, is the holiest city in Islam and is located in western Saudi Arabia. It is the birthplace of the Prophet Muhammad and is the destination for the annual Hajj pilgrimage, which is one of the five pillars of Islam. Millions of Muslims from all over the world travel to Mecca each year to perform the Hajj, which is a spiritual journey that involves circling the Kaaba, praying at the Masjid al-Haram, and walking between the hills of Safa and Marwah. </p>
+</div>
+<div class="content-carousel col-6  p-3 mx-3">
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/m1.jpg'%}"  class="d-block w-100 ">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/m3.jpg'%}" class="d-block w-100" >
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/m5.jpg'%}" class="d-block w-100" >
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/m2.jpg'%}"  class="d-block w-100 " >
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/m6.jpg'%}" class="d-block w-100" >
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--mecca-carousel-->
+</div>
+<!--mecca-content-->
+
+</div>
+<div class="visit-content mt-4 mx-4">
+  <div class="visit-subcontent">
+  <h2 class="text-center mt-4">Discover</h2>
+  <h3 class="text-center">Choose the place where you want to visit</h3>
+  </div>
+  <div class="places my-4 p-3">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card1">
+        <div class="card">
+          <img src="{% static 'images/m4.jpg'%}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title text-center text-danger-emphasis">Masjid al-Haram</h3>
+            <p class="card-text">The cube-shaped structure at the center of Islam's holiest mosque, Masjid al-Haram.</p>
+            <a href="https://maps.app.goo.gl/g5wNbGNRrb2SAZeRA?g_st=iw" class="btn btn-success">Location</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="{% static 'images/Qasr.jpeg'%}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title text-center text-danger-emphasis">Qasr Bin Sulaiman historical</h3>
+            <p class="card-text">This palace is famous as one of the important historical and archaeological monuments in Makkah Al-Mukarramah.</p>
+            <a href="https://maps.app.goo.gl/hYma1VvM5CMtntPj6?g_st=iw" class="btn btn-success">Location</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="{% static 'images/wadi.jpeg'%}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title text-center text-danger-emphasis">Wadi AlKharrar</h3>
+            <p class="card-text">Wadi Al Kharrar is famous historically for its beautiful scenery and the flow of water in the form of waterfalls from the tops.</p>
+            <a href="https://maps.app.goo.gl/iATvZJgbU1LpnaXu5?g_st=iw" class="btn btn-success">Location</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="{% static 'images/nour.jpeg'%}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title text-center text-danger-emphasis">Hira Cave</h3>
+            <p class="card-text">This is where Muhammad is said to have had his first revelation and received five verses of the Quran.</p>
+            <a href="https://maps.app.goo.gl/vmHgWBTihfkJH5kc7?g_st=iw" class="btn btn-success">Location</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--mecca-->
+  <div class="video mt-4">
+  <h2 class="text-center mb-3">Masjid al-Haram Live</h2>
+    <center><iframe class="video-content p-3 mb-4" src="https://www.youtube.com/embed/EAWA3Sub4Us?si=lWb9Ib0H5eVYlemT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+  </div>
+</div>
+{% endblock %}

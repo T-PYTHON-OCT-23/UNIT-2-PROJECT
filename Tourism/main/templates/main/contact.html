@@ -1,0 +1,50 @@
+{% extends 'main/base.html' %}
+{%load static %}
+{%block title %}Contact{% endblock%}
+{% block content %}
+<div class="top-space"></div>
+<div class="contact_content my-5 mx-5">
+  <img src="{% static 'images/des.jpg'%}">
+  <h1 class="text-center">Contact form</h1>
+<div class="main-contact my-5 mx-5 p-3 ">
+  <div class="mb-3">
+    <p for="exampleFormControlInput1" class="form-label p1">Name</p>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="mb-3">
+    <p for="exampleFormControlInput1" class="form-label p1">Email address</p>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <p for="exampleFormControlInput1" class="form-label p1">Phone</p>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+996xxxxxxxxx">
+  </div>
+  <div class="mb-3">
+    <p for="exampleFormControlInput1" class="form-label p1">Subject</p>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+  </div>
+  <div class="mb-3">
+    <p for="exampleFormControlTextarea1" class="form-label p1">Message</p>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+</div>
+  <div class="row mt-3 gap-4">
+
+    <div class="icon col">
+      <a href="https://x.com/saudi_mt?s=21"><i class="fab fa-twitter"></i> Twitter</a>
+      </div>
+    
+      <div class="icon col">
+        <a href="https://instagram.com/saudi.mt?igshid=YzAwZjE1ZTI0Zg=="><i class="fab fa-instagram"></i> instgram</a>
+      </div>
+
+      <div class="icon col">
+        <a href="https://www.linkedin.com/company/ministry-of-tourism-of-saudi-arabia/"><i class="fab fa-linkedin-in"></i> linkedin</a>
+      </div>
+
+  </div>
+
+
+
+</div>
+{% endblock %}

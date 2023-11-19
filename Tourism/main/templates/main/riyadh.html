@@ -1,0 +1,132 @@
+{% extends 'main/base.html' %}
+{%load static %}
+{%block title %}Riyadh{% endblock%}
+{% block content %}
+<div class="container-content pt-5">
+<div class ='main-content d-flex justify-content-between mt-5 mx-4'>
+<div class="main-subcontent">
+<h1 class="text-center">Riyadh</h1>
+<h2 class="text-center">A Journey Through Time</h2>
+<p class="p1 mx-3 mt-3"> Amidst the vast expanse of the Arabian Peninsula, Riyadh, the capital and largest city of Saudi Arabia, stands as a beacon of modernity and tradition. Its name, derived from the Arabic word for "gardens," aptly reflects its transformation from a once-small oasis settlement into a thriving metropolis. Today, Riyadh is a dynamic hub of commerce, culture, and innovation, seamlessly blending its rich heritage with the allure of contemporary life.</p>
+</div>
+<div class="content-carousel col-6  p-3 mx-3">
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static 'images/r5.jpeg'%}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="h5-1 p-1">Boulevard Worlds</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/r2.jpg'%}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="h5-1 p-1">Al-faisaliah Tower</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/r3.jpg'%}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="h5-1 p-1" >Al-diriyah</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/r4.jpg'%}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="h5-1 p-1" >King Abdullah Financial District</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/r6.jpeg'%}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="h5-1 p-1">Wonder Garden</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'images/r1.jpg'%}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="h5-1 p-1" >Al-mamlaka Tower</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+  <!--Riyadh-carousel-->
+</div>
+<!--Riyadh-content-->
+
+</div>
+<div class="visit-content mt-4 mx-4">
+  <div class="visit-subcontent">
+  <h2 class="text-center mt-4">Discover</h2>
+  <h3 class="text-center">Choose the place where you want to visit</h3>
+  </div>
+  <div class="places my-4 p-3">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card1">
+        <div class="card">
+          <img src="{% static 'images/r6.jpeg'%}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title text-center text-danger-emphasis">Wonder Garden</h3>
+            <p class="card-text">is literally full of wonders more than 70 rides, experiences, shows, and more are waiting for you!</p>
+            <a href="https://maps.app.goo.gl/ht8qgWcxW4kzYUiUA?g_st=iw" class="btn btn-success">Location</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="{% static 'images/r8.jpg'%}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title text-center text-danger-emphasis">King Abdullah Financial District</h3>
+            <p class="card-text">a unique entertainment offering and advanced smart city solutions, welcomes you to join its vibrant community that redefines urban living.</p>
+            <a href="https://maps.app.goo.gl/QMRZLCB2itkctDTd9?g_st=iw" class="btn btn-success">Location</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="{% static 'images/r9.jpeg'%}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title text-center text-danger-emphasis">Boulevard Worlds</h3>
+            <p class="card-text">Boulevard World includes the largest man-made lake and a variety of rides and attractions for all ages.</p>
+            <a href="https://maps.app.goo.gl/e6tKmhSJwemP4Hgk6?g_st=iw" class="btn btn-success">Location</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="{% static 'images/r10.jpg'%}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title text-center text-danger-emphasis">Al-diriyah</h3>
+            <p class="card-text"> in Diriyah, you will be introduced to a distinct dimension of entertainment, which is the heart of a historical city</p>
+            <a href="https://maps.app.goo.gl/KFuiKjFTQx8b8J7L9?g_st=iw" class="btn btn-success">Location</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Riyadh-->
+  <div class="video mt-4">
+  <h2 class="text-center mb-3">Riyadh 2023 season with its new identity</h2>
+    <center><iframe class="video-content p-3 mb-4" src="https://www.youtube.com/embed/g8-NjAOWhME?si=OK3X62lFTjR9mRFr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+  </div>
+</div>
+{% endblock %}

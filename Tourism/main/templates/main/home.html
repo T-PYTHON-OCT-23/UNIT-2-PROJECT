@@ -1,0 +1,72 @@
+{% extends 'main/base.html' %}
+{%load static %}
+{%block title %}Home{% endblock%}
+{% block content %}
+<div class="home">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/neom.jpg'%}" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/Dammam.jpg'%}" class="d-block w-100">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/d.jpg'%}" class="d-block w-100">
+      </div>
+    </div>
+  </div>
+
+  <div class="top-space"></div>
+  <div class="text container my-5 px-4 py-4">
+    <p class="p1 mb-5">Saudi Arabia, a land steeped in ancient traditions and blessed with breathtaking landscapes, is rapidly emerging as a captivating tourist destination. From the holy cities of Mecca and Medina to the vast expanses of the Empty Quarter desert, the Kingdom offers a captivating blend of cultural immersion, historical exploration, and adventurous pursuits. The Kingdom's infrastructure, with its modern airports, luxury accommodations, and well-maintained roads, ensures a seamless travel experience.</p> 
+    <center><iframe class="mb-5"width="800" height="400" src="https://www.youtube.com/embed/VsJij8Sl6JE?si=uH2Uw3aguh5x9QYZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+  </div>
+</div>
+<div class="ttt mt-3 py-4">
+<h3 class="text-center my-5">Let us show you the beauty of Saudi Arabia.</h3>
+<div class="d-flex justify-content-evenly">
+  <div class="card-content">
+      <!--card 1-->
+      <div class="card" style="width: 16rem;">
+          <img src="{% static 'images/mkkah.jpg'%}"  class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title text-center text-danger-emphasis">Mecca</h4>
+            <p class="card-text">The holiest city in Islam, is home to the Kaaba, a cubical structure revered by Muslims worldwide as the earthly representation of God's house.</p>
+            <a href="{% url 'main:mecca_page'%}" class="btn btn-success">See more</a>
+          </div>
+        </div>
+      </div>
+  <!--card 2 -->
+      <div class="card" style="width:16rem;">
+      <img src="{% static 'images/Riyadh.jpg'%}"  class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title text-center text-danger-emphasis">Riyadh</h4>
+        <p class="card-text">The bustling capital of Saudi Arabia, is a captivating blend of modernity and tradition, where skyscrapers pierce the desert sky and ancient souks.</p>
+        <br>
+        <a href="{% url 'main:riyadh_page'%}" class="btn btn-success">See more</a>
+      </div>
+    </div>
+  <!--card 3-->
+  <div class="card" style="width:16rem;">
+      <img src="{% static 'images/Alula.jpg'%}"  class="card-img-top">
+      <div class="card-body">
+        <h4 class="card-title text-center text-danger-emphasis">Alula</h4>
+        <p class="card-text">is a captivating oasis in the northwestern region of Saudi Arabia, renowned for its ancient civilizations, awe-inspiring natural beauty.</p>
+        <br>
+        <a href="{% url 'main:alula_page'%}" class="btn btn-success ms-4">See more</a>
+      </div>
+    </div>
+  <!--card 4-->
+  <div class="card" style="width:16rem;">
+      <img src="{% static 'images/j.jpg'%}" class="card-img-top" >
+      <div class="card-body">
+        <h4 class="card-title text-center text-danger-emphasis">Jeddah</h4>
+        <p class="card-text"> The vibrant coastal city on the Red Sea, is a captivating blend of ancient heritage and modern allure, where towering skyscrapers grace the skyline.</p>
+        <a href="{% url 'main:jeddah_page'%}" class="btn btn-success">See more</a>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+{% endblock %}

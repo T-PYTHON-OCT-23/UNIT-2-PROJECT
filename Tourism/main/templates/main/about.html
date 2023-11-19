@@ -1,0 +1,32 @@
+{% extends 'main/base.html' %}
+{%load static %}
+{%block title %}About us{% endblock%}
+{% block content %}
+
+<div class="top-space"></div>
+<div class="about-us my-5 mx-5">
+<img src="{% static 'images/desert.jpg'%}">
+<div class="about-us-content row ">
+<h2>Ministry of Tourism</h2>
+<p>The Ministry of Tourism started operations in 2000, focusing on long-term growth. Its main objective is to implement the kingdom's vision for tourism, along with facilitating successful collaborations and developing national human capital.</p>
+</div>
+
+<div class="row mt-3 gap-3">
+    <div class="about-us-content col">
+        <h2>Vision</h2>
+        <p>To be the worlds leading tourism sector driving the highest sustainable impact.</p>
+    </div>
+    <div class="about-us-content col">
+        <h2>Mission</h2>
+        <p>Enabling accelerated and sustainable growth with future focused policies, investments and talent development, guided by data, powered by integrated delivery while remaining true to our Arabian authenticity.</p>
+    </div>
+    <div class="about-us-content col">
+        <h2>Purpose</h2>
+        <p>We win people’s hearts and minds by opening our doors to the world through a tourism sector where life-changing stories happen every day.</p>
+    </div>
+
+</div>
+</div>
+
+
+{% endblock %}

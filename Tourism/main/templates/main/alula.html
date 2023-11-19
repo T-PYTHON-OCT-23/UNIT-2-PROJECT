@@ -1,0 +1,106 @@
+{% extends 'main/base.html' %}
+{%load static %}
+{%block title %}Alula{% endblock%}
+{% block content %}
+<div class="container-content pt-5">
+<div class ='main-content d-flex justify-content-between mt-5 mx-4'>
+<div class="main-subcontent">
+<h1 class="text-center">Alula</h1>
+<h2 class="text-center">Where Ancient Wonders Await</h2>
+<p class="p1 mx-3 mt-3">AlUla, an ancient oasis city located in northwestern Saudi Arabia, is a UNESCO World Heritage Site and a thriving cultural destination. Once a bustling crossroads of civilizations, AlUla's rich history spans millennia, with evidence of human habitation dating back to over 9,000 years. </p>
+</div>
+<div class="content-carousel col-6  p-3 mx-3">
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/u2.jpg'%}"  class="d-block w-100 ">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/u3.jpg'%}" class="d-block w-100" >
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/u4.jpg'%}" class="d-block w-100" >
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/u5.jpg'%}"  class="d-block w-100 " >
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/u6.jpg'%}" class="d-block w-100" >
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/u7.jpg'%}" class="d-block w-100" >
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--mecca-carousel-->
+</div>
+<!--mecca-content-->
+
+</div>
+<div class="visit-content mt-4 mx-4">
+  <div class="visit-subcontent">
+  <h2 class="text-center mt-4">Discover</h2>
+  <h3 class="text-center">Choose the place where you want to visit</h3>
+  </div>
+  <div class="places my-4 p-3">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card1">
+        <div class="card">
+          <img src="{% static 'images/u8.png'%}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title text-center text-danger-emphasis">Winter Park</h3>
+            <p class="card-text">Winter Park is your hub for enjoying all that AlUla has to offer this season. Start at the Visitor Information Center to plan your experience. </p>
+            <a href="https://maps.app.goo.gl/uCENS5p6T7ednRBR7?g_st=iw" class="btn btn-success">Location</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="{% static 'images/u9.jpeg'%}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title text-center text-danger-emphasis">Elephant Rock</h3>
+            <p class="card-text">Elephant Rock This sandstone formation is said to resemble an elephant. It is located in the Dadan Basin, about 20 kilometers from Hegra.</p>
+            <a href="https://maps.app.goo.gl/BRtfmdysQA7DmVHt5?g_st=iw" class="btn btn-success">Location</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="{% static 'images/u11.jpeg'%}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title text-center text-danger-emphasis">AlUla Old Town</h3>
+            <p class="card-text">The Old Town is a charming place to wander through, with its narrow streets, traditional mudbrick houses, and local shops.</p>
+            <a href="https://maps.app.goo.gl/Zak7DRYnsou5bGpy5?g_st=iw" class="btn btn-success">Location</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="{% static 'images/u10.jpg'%}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title text-center text-danger-emphasis">Maraya</h3>
+            <p class="card-text">This mirrored concert hall is a stunning piece of architecture, and is a popular venue for concerts and other events.</p>
+            <a href="https://maps.app.goo.gl/GSdckogoxcyZbXWt5?g_st=iw" class="btn btn-success">Location</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--mecca-->
+  <div class="video mt-4">
+  <h2 class="text-center mb-3">Explore ALULA Wonders of Time</h2>
+    <center><iframe class="video-content p-3 mb-4" src="https://www.youtube.com/embed/emvy30hUfoE?si=836RecKXRqOCNOGZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+  </div>
+</div>
+{% endblock %}
