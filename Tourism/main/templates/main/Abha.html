@@ -1,0 +1,217 @@
+{% extends 'main/base.html' %}
+{% block title %}Home page{% endblock %}
+{% load static %}
+{% block content %}
+<div class="abha-container">
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="{% static 'image/abha-1.jpg'%}" class="d-block w-100" alt="image abha city">
+        <div class="carousel-caption">
+          <h5>Wellcome in Abha</h5>
+          <p>Say goodbye to the summer heat and enjoy the cool weather in the highlands of Aseer.</p>
+          <p> <a href="https://map.visitsaudi.com/?lat=18.220666&lng=42.504331&z=10" class="btn btn-warning mt3">Abha map</a></p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{% static 'image/abha11.jpg'%}" class="d-block w-100" alt="image abha city">
+        <div class="carousel-caption">
+          <h5>The High City…</h5>
+          <p>A fun destination on your trips radar</p>
+         
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'image/abha3.jpg'%}" class="d-block w-100" alt="image abha city">
+        <div class="carousel-caption">
+          <h5>Al-Dabab Walkway… </h5>
+          <p> A Few Steps Away from Wonder</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</section>
+
+<!--services section-->
+  
+<section id="--services" class="services section-padding">
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="section-header text-center pb-5">
+        <h2>Top Attractions</h2>
+        <p></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-md-12 col-lg-4">
+      <div class="card text-white text-center bg-dark pb-2">
+        <div class="card-body">
+          <i class="bi bi-tree"></i><!--  اللي اخذناه من بوت سترب هنا نكتب اسم icon-->
+          <h3 class="card-title">Natural Parks in Abha</h3>
+          <p class="lead"> Aseer National Park
+            Abha Airport Park
+            Hadaba park in Mahareth
+            Al Masqi Park
+            Abha Dam Park
+            Al Murabba’a Park
+          </p>
+          <p> <a href="https://www.visitsaudi.com/en/see-do/destinations/abha/parks-in-abha" class="btn btn-warning mt3">Explore</a></p>
+
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 col-lg-4">
+      <div class="card text-white text-center bg-dark pb-2">
+        <div class="card-body">
+          <i class="bi bi-triangle"></i><!--  اللي اخذناه من بوت سترب هنا نكتب اسم icon-->
+          <h3 class="card-title">Mountain trips in Abha</h3>
+          <p class="lead"> Enjoy the surprises of the road
+            On the mountain roads, the environment will not disappoint you with its richness 
+            
+          </p>
+          <p> <a href="https://www.visitsaudi.com/en/see-do/destinations/abha/hiking-in-abha" class="btn btn-warning mt3">Explore</a></p>
+
+
+        </div>
+      </div>
+    
+  </div>
+  <div class="col-12 col-md-12 col-lg-4">
+    <div class="card text-white text-center bg-dark pb-2">
+      <div class="card-body">
+        <i class="bi bi-bag-dash"></i></i><!--  اللي اخذناه من بوت سترب هنا نكتب اسم icon-->
+        <h3 class="card-title">Al-Basta heritage district </h3>
+        <p class="lead"> To get more from your visit to Al-Basta district, head out to Al-Hosn Al-Turathi restaurant to taste the delicious traditional delicacies </p>
+        <p> <a href="https://www.visitsaudi.com/en/see-do/destinations/abha/albasta-district-in-abha" class="btn btn-warning mt3">Explore</a></p>
+
+      </div>
+    </div>
+  
+</div>
+
+
+</section>
+
+
+<!--provail section-->
+
+<section id="profile" class="profile section-padding">
+    <div class="container">
+      <div class="col-md-12">
+        <div class="section-header text-center pb-5">
+          <h2>Shopping</h2>
+          <p>Restaurants & Cafes</p>
+        </div>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-12 col-md-12 col-lg-4">
+      <div class="card text-center bg-white pb-2">
+        <div class="card-body text-dark">
+        <div class="img-area mb-4">
+          <img src="" alt="" class="img-fluid">
+        </div>
+        <h3 class="card-title">Khamis Mushait Boulevard</h3>
+        <p class="lead">hamis Mushait is Just a half-hour drive from Abha. Here you will find a mesmerizing place that will lure you to discover an experience like no other, it is where pleasure, beautiful weather, cuisine and luxury shopping meet.</p>
+        <p> <a href="https://www.visitsaudi.com/en/see-do/destinations/abha/boulevard-khamis-mushait" class="btn btn-warning mt3">Explore</a></p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-4">
+      <div class="card text-center bg-white pb-2">
+        <div class="card-body text-dark">
+        <div class="img-area mb-4">
+          <img src="" alt="" class="img-fluid">
+        </div>
+        <h3 class="card-title">Sapidity of Honey in Abha</h3>
+        <p class="lead">When you visit Abha, tables decorated with the highest quality and the most delicious types of Honey made by nature will greet you. 
+          The region's rich nature lavished its people with unique Honey till it became part
+           of Aseer 
+        </p>
+        <p> <a href="https://www.visitsaudi.com/en/see-do/destinations/abha/the-delicacy-of-honey" class="btn btn-warning mt3">Explore</a></p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-12 col-md-12 col-lg-4">
+      <div class="card text-center bg-white pb-2">
+        <div class="card-body text-dark">
+        <div class="img-area mb-4">
+          <img src="" alt="" class="img-fluid">
+        </div>
+        <h3 class="card-title">The popular cuisine in Abha</h3>
+        <p class="lead">Heneeth is a dish associated with the well-known sala and markh trees in Asir. It is one of the most famous dishes in the province. Heneeth is often prepared outdoors, in an iron pot or in a sand pit referred to as "mahnaz".</p>
+        <p> <a href="https://www.visitsaudi.com/en/see-do/destinations/abha/traditional-dishes-and-flavors-of-abha" class="btn btn-warning mt3">Explore</a></p>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+  
+
+</section>
+
+<!--team section-->
+
+<section id="team" class="team section-padding">
+
+  <div class="container">
+    <div class="col-md-12">
+      
+    </div>
+  </div>
+  <div class="row"
+  <div class="col-12 col-md-6 col-lg-3">
+    <div class="card text-center">
+      <div class="card-body">
+        <img src="" alt="" class="img-fluid rounded-circle">
+        <h3 class="card-title py-2">Abha city</h3>
+        <p class="card-text">At an altitude of 2,200 m between the peaks of the Sarawat Mountains</p>
+        <div class="socials">
+          <a href="https://twitter.com/VisitSaudi"><i class="bi bi-bi bi-twitter-x"> </i></a>
+          <a href="https://facebook.com/VisitSaudi"><i class="bi bi-facebook text-darmx-1"></i></a>
+        
+      </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  
+  </div>
+</section>
+</div>
+
+
+
+
+{% endblock %}

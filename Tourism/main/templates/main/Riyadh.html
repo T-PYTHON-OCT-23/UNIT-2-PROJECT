@@ -1,0 +1,229 @@
+{% extends 'main/base.html' %}
+{%load static %}
+{% block title %}Home page{% endblock %}
+{% block content %}
+<section >
+
+    
+
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="{% static 'image/r-1.jpg'%}" class="d-block w-100" alt="image riyadh city">
+        <div class="carousel-caption">
+          <h5>Riyadh Season 2023 </h5>
+          <p>One of the most widely anticipated events of the year, Riyadh Season is back
+             in action for a fourth year. The gathering features 12 zones, each offering something unique,
+             from concerts to five-star dining and everything in between.</p>
+             <p> <a href="https://map.visitsaudi.com/?lat=24.774265&lng=46.738586&z=10" class="btn btn-warning mt3">Riyadh map</a></p>
+
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{% static 'image/r-2.jpg'%}" class="d-block w-100" alt="image riyadh city">
+        <div class="carousel-caption">
+          <h5> Wellcome in AlRiyadh</h5>
+          <p></p>
+          <p> <a href="https://www.visitsaudi.com/en/see-do/destinations/riyadh?lang=en" class="btn btn-warning mt3">Explore</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'image/r-3.jpg'%}" class="d-block w-100" alt="image riyadh city">
+        <div class="carousel-caption">
+          <h5>Live the Modern Life to its Fullest</h5>
+          <p></p>
+          
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<!-- about section 
+<section id="about" class="about section-padding">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-4 col-md-112 col-12">
+      <div class="about-img">
+        <img src="static/image/home-1.jpg" alt="" class="img-fluid">
+      </div>
+      </div>
+      <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5"></div>
+        <div class="about-txt">
+
+          <h2>welcom Saudia Arabia <br>we vary happy to visit </h2>
+          <p>Saudi Arabia in brief
+          Destination Saudi Arabia, a Nations Online country profile of 
+          the desert country in Arabia. The Kingdom of Saudi Arabia occupies 
+          most of the Arabian Peninsula, the original homeland of the Arabs,
+          the place of origin of the Arabian language, and the historic
+            center of Islam. </p>
+
+        <a href="#" class="btn btn-warning">learn more</a>
+
+
+        </div>
+    </div>
+</div>
+-->
+</section>
+
+<!--services section-->
+  
+<section id="--services" class="services section-padding">
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="section-header text-center pb-5">
+        <h2>Riyadh Season Zones</h2>
+        <p></p>
+      </div>
+    </div>
+
+ 
+    <div class="col-12 col-md-12 col-lg-4">
+      <div class="card text-white text-center bg-dark pb-2">
+        <div class="card-body">
+          <i class="bi bi-bag-dash"></i><!--  اللي اخذناه من بوت سترب هنا نكتب اسم icon-->
+          <h3 class="card-title">Via Riyadh</h3>
+          <p class="lead"> Designed in the Salmani style, this complex features hotel, a luxury cinema, and exclusive boutiques, restaurants, and cafes.</p>
+            
+              <p> <a href="https://riyadhseason.com/en-US/zone/via-riyadh" class="btn btn-warning mt3">Explore</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-12 col-lg-4">
+      <div class="card text-white text-center bg-dark pb-2">
+        <div class="card-body">
+          <i class="bi bi-tree"></i><!--  اللي اخذناه من بوت سترب هنا نكتب اسم icon-->
+          <h3 class="card-title">Wonder Garden</h3>
+          <p class="lead"> A magical amusement park takes you through whimsical experiences, with unique rides, butterflies and greenery.</p>
+              <p> <a href="https://riyadhseason.com/en-US/zone/wonder-garden" class="btn btn-warning mt3">Explore</a></p>
+        </div>
+      </div>
+    
+  </div>
+  <div class="col-12 col-md-12 col-lg-4">
+    <div class="card text-white text-center bg-dark pb-2">
+      <div class="card-body">
+        <i class="bi bi-balloon"></i></i><!--  اللي اخذناه من بوت سترب هنا نكتب اسم icon-->
+        <h3 class="card-title">Boulevard City</h3>
+        <p class="lead"> The heart of Riyadh Season, this sustainable entertainment hub includes gardens, fountains, cafés, and restaurants.</p>
+            <p> <a href="https://riyadhseason.com/en-US/zone/boulevard-city" class="btn btn-warning mt3">Explore</a></p>
+      </div>
+    </div>
+
+    </div>
+  
+</div>
+</div>
+
+
+</section>
+
+
+<!--provail section-->
+
+
+
+
+<section id="profile" class="profile section-padding   mt-3">
+    <div class="container">
+
+   
+  <div class="row">
+    <div class="col-12 col-md-12 col-lg-4"><!--هنا الغلم-->
+      <div class="card text-center bg-white pb-2">
+        <div class="card-body text-dark">
+     <!--  <div class="img-area mb-4">
+          <img src="static/image/home-1.jpg" alt="" class="img-fluid">
+        </div>-->
+        <h3 class="card-title">Riyadh Zoo</h3>
+        <p class="lead">Journey through the forests of Africa and see the endangered red panda for the first time in the Middle East!</p>
+        <p> <a href="https://riyadhseason.com/en-US/zone/riyadh-zoo" class="btn btn-warning mt3">Explore</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-12 col-lg-4">
+      <div class="card text-center bg-white pb-2">
+        <div class="card-body text-dark">
+        <!--<div class="img-area mb-4">
+          <img src="static/image/home-1.jpg" alt="" class="img-fluid">
+        </div>-->
+        <h3 class="card-title">Souq AlAwaleen</h3>
+        <p class="lead">Visiting Souq AlAwaleen is a remarkable experience that promises to immerse you in the charm of an old Najdi market.it’s a living</p>
+        <p> <a href="https://riyadhseason.com/en-US/zone/souq-alawaleen" class="btn btn-warning mt3">Explore</a></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-12 col-md-12 col-lg-4">
+      <div class="card text-center bg-white pb-2">
+        <div class="card-body text-dark">
+       
+        <h3 class="card-title">Boulevard world</h3>
+        <p class="lead">Boulevard World is the place where you can have endless choices for experiences that vary from art, sports, and many more</p>
+        <p> <a href="https://riyadhseason.com/en-US/zone/boulevard-world" class="btn btn-warning mt3">Explore</a></p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+</div>
+
+
+  
+
+</section>
+
+<!--team section-->
+
+<section id="team" class="team section-padding">
+
+  <div class="container">
+    <div class="col-md-12">
+      
+    </div>
+  </div>
+  <div class="row"
+  <div class="col-12 col-md-6 col-lg-3">
+    <div class="card text-center">
+      <div class="card-body">
+        <img src="" alt="" class="img-fluid rounded-circle">
+        <h3 class="card-title py-2">Riyadh City</h3>
+        <p class="card-text">contact us</p>
+        <div class="socials">
+            <a href="https://twitter.com/VisitSaudi"><i class="bi bi-bi bi-twitter-x"> </i></a>
+            <a href="https://facebook.com/VisitSaudi"><i class="bi bi-facebook text-darmx-1"></i></a>
+          
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  
+  </div>
+</section>
+
+
+
+{% endblock %}

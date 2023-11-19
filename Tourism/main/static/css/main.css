@@ -1,0 +1,253 @@
+*{
+    
+    font-family: montserrat;
+    
+}
+body{
+    
+    background-color:#f3f0dd;
+    
+}
+.dark {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+.dark .container a {
+    color: white;
+}
+
+
+.dark .container {
+
+    background-color: rgba(0, 0, 0, 0.486);
+
+}
+
+.video-container {
+    position: relative;
+    height: 100vh; 
+}
+
+video {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+
+
+.section-padding{
+
+
+    padding: 100px 0;
+
+}
+.carousel-item{
+
+    height: 100vh;
+    min-height: 300px;
+    
+}
+.carousel-caption {
+
+bottom: 220px;
+
+z-index: 2;
+}
+.carousel-caption h5 {
+
+   font-size: 45px;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   margin-top: 25px;
+   color: #fff;
+  
+
+    }
+
+ 
+.carousel-caption p {
+
+        width: 60%;
+        font-size: 18px;
+        margin: auto;
+        line-height: 1.9;
+       color: #fff;
+
+         }
+.carousel-inner::before{
+
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+           
+           background-color: rgba(0, 0, 0, 0.7a);
+            z-index: 1;
+         }   
+.navbar-nav a {
+
+
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    
+}  
+nav-link a :hover{
+    background-color: rgb(221, 89, 89) ;
+    
+}
+.navbar-light .navbar-brand{
+/*color: #000;*/
+
+font-size: 20px;
+text-transform: uppercase;
+font-weight: 700;
+letter-spacing: 2px;
+
+
+
+}
+.navbar-light .navbar-brand:focus
+.navbar-light .navbar-brand:hover{
+
+    color:#000;
+   
+}
+.navbar-light .navbar-nav .navbar-link{
+
+color: #000;
+
+}
+
+.w-100{
+
+    height: 100vh;
+}
+
+.services .card-body i{
+    font-size: 70px;
+   
+
+
+}    
+
+.team .card-body  i{
+    font-size: 20px;
+    
+
+
+}
+.profile .card-body {
+    box-shadow: 15px 15 px 40px rgba(0, 0, 0, 0.15);
+
+}
+.team .card {
+
+    box-shadow: 15px 15 px 40px rgba(0, 0, 0, 0.15);
+}
+@media only screen and (max-width: 768px) and (max-width:991px) {
+    .carousel-caption{
+
+       bottom: 370px;
+    }
+    .carousel-caption p{
+        width: 100%;
+       
+    }
+    .card{
+        margin-bottom: 30px
+
+    }
+    .img-area img{
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+
+        font-size: 17px;
+       
+
+    }
+
+
+    .about-text{
+
+        padding-top: 50px;
+    }
+    .card{
+        margin-bottom: 30px;
+    }
+}
+
+@keyframes carousel-caption h5{
+    
+    from {
+        transform: scale(0,0) translate(-100%, 0px);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1)  translate(0px, 0px);
+        opacity: 1;
+    }
+}
+/*.home-container{
+
+    background-image: url('static/image/home-4.jpg');
+    background-size: cover;
+    background-position:center ;
+    background-repeat:  no-repeat;
+    padding: 20vh 5vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+}*/
+/*.abha-container{
+
+    background-image: url('static/image/abha-1.jpg');
+    background-size: cover;
+    background-position:center ;
+    background-repeat:  no-repeat;
+    padding: 20vh 5vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+}*/
+.text-warnung{
+
+    font-size: 1rem;
+}
+.navbarSupportedContent ul li a:hover{
+background-color: #fff;
+color: #000;
+}
+.display-mode {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/*#icon{
+    width: 30px;
+    cursor: pointer;
+}
+*/
