@@ -44,6 +44,7 @@ body {
 }
 
 
+
 .card-img{
     display: flex;
     justify-content: center;
@@ -74,7 +75,7 @@ body {
 .box-para{
 position: relative;
 color: black;
-font-size: 15px;
+font-size: 25px;
 }
 
 .box-para::before{
