@@ -1,0 +1,93 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} {% endblock %}
+
+{% block content %}
+
+<div class="ruhv">
+    <h1>Welcome To Alula</h1>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="/static/videos/AlUla.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+</div>
+<div class="header">
+    <h1> Discover</h1>
+</div>
+
+
+<div class="container">
+
+    <div class="row mt-3">
+        <div class="col-12 col-md-6 order-2 order-md-1">
+            <div class="d-flex flex-column gap-2 h-100 justify-content-center align-items-start">
+                <h2>elephant Rock</h2>
+                <p>Elephant Rock (Jabal AlFil), is an amazing geomorphological wonder located 11km
+                    northeast of AlUla. A spectacular example of natural erosive forces of water and wind over a period
+                    of millions of years, this natural wonder rises 171ft into the air with mountains looming in the
+                    background.
+                </p>
+            </div>
+        </div>
+        <div class="col order-1 order-md-2">
+            <img class=" rounded-1" width="600" height="500" src="/static/images/elephant.jpeg" />
+        </div>
+    </div>
+
+    <hr />
+    <div class="row mt-3">
+        <div class="col-12 col-md-6 order-1 order-md-2">
+            <div class="d-flex flex-column gap-2 h-100 justify-content-center align-items-start">
+                <h2>The AlUla Oasis</h2>
+                <p> Nestled within the Wadi AlQura (or Valley of Villages) is the heart of the region.
+                    The AlUla Oasis is a lush haven that offers cool respite with its famous date palm groves and
+                    aromatic citrus trees along with harvests of wheat, barley, olives, figs, and oats. The AlUla Valley
+                    thrives due to the drainage basin and the oasis's natural springs.</p>
+            </div>
+        </div>
+        <div class="col order-2 order-md-1">
+            <img width="600" height="500" src="/static/images/AlUla_Oasis.png.webp" />
+        </div>
+    </div>
+
+
+    <hr />
+    <div class="row mt-3">
+        <div class="col-12 col-md-6 order-2 order-md-1">
+            <div class="d-flex flex-column gap-2 h-100 justify-content-center align-items-start">
+                <h2>AlGharameel</h2>
+                <p>In the vast desert of AlUla, the site of AlGharameel overlooks the charm of its
+                    miraculously carved terrain. Geologists explain its existence as the remains of a huge mountain,
+                    which disappeared due to nature and erosion factors, forming different rock formations.</p>
+            </div>
+        </div>
+        <div class="col order-1 order-md-2">
+            <img width="600" height="500" src="/static/images/algha.jpeg" />
+        </div>
+    </div>
+    <hr />
+    <div class="row mt-3">
+        <div class="col-12 col-md-6 order-1 order-md-2">
+            <div class="d-flex flex-column gap-2 h-100 justify-content-center align-items-start">
+                <h2>Maraya Concert Hall</h2>
+                <p> Natural beauty stimulates constructional beauty, therefore, Maraya Concert Hall was
+                    designed to be an artistic piece of work, with its mirrors reflecting the amazing natural beauty
+                    elements of AlUla surrounding the building. It is approximately 9,740 square meters, and it is in
+                    The Guinness Book of Records for being the biggest reflective building in the world.</p>
+            </div>
+        </div>
+        <div class="col order-2 order-md-1">
+            <img width="600" height="500" src="/static/images/Maraya.jpeg" />
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+{% endblock%}

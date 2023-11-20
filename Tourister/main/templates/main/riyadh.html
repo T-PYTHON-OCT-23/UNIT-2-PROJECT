@@ -1,0 +1,92 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} {% endblock %}
+
+{% block content %}
+
+
+<div class="ruhv">
+    <h1>Welcome To Riyadh</h1>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="/static/videos/Riyadh.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+</div>
+
+<!-- Header -->
+<div class="header">
+    <h1> Discover</h1>
+</div>
+
+
+<div class="container">
+
+    <div class="row mt-3">
+        <div class="col-12 col-md-6 order-2 order-md-1">
+            <div class="d-flex flex-column gap-2 h-100 justify-content-center align-items-start">
+                <h2>Al Masmak Palace</h2>
+                <p>The magnificent Al Masmak Palace stands erected gracefully in the middle of Riyadh city as a tourist
+                    destination having silently witnessed great events in the history of KSA foundation.</p>
+            </div>
+        </div>
+        <div class="col order-1 order-md-2">
+            <img class=" rounded-1" width="600" height="500" src="/static/images/almasmak.jpeg" />
+        </div>
+    </div>
+
+    <hr />
+    <div class="row mt-3">
+        <div class="col-12 col-md-6 order-1 order-md-2">
+            <div class="d-flex flex-column gap-2 h-100 justify-content-center align-items-start">
+                <h2>Al Faisaliah Tower</h2>
+                <p> At the top of Al Faisaliah Tower, it is true to say that you can catch the most beautiful views of
+                    the city in the restaurants that overlook it. Also, Al Faisaliah Tower is the first skyscraper in
+                    Saudi Arabia. Its hotel and all its facilities are equipped with the latest technologies. There is
+                    also a children’s amusement park, along with international shopping stores. The trip to the capital
+                    city is not complete without visiting it.</p>
+            </div>
+        </div>
+        <div class="col order-2 order-md-1">
+            <img width="600" height="500" src="/static/images/faisT.jpeg" />
+        </div>
+    </div>
+
+
+    <hr />
+    <div class="row mt-3">
+        <div class="col-12 col-md-6 order-2 order-md-1">
+            <div class="d-flex flex-column gap-2 h-100 justify-content-center align-items-start">
+                <h2>Sky Bridge at Kingdom Center</h2>
+                <p>From a height of 300 meters in the sky of Riyadh, take in a stunning panoramic view of the beauty of
+                    the city through highly secure glass panels. These panels let you enjoy the view of the starry
+                    nights and contemplate the yellow lights reflected on the streets and buildings of Riyadh from the
+                    Sky Bridge. Another way to seize the moment is by taking selfies where the glamour of the city is
+                    behind you on a clear day.</p>
+            </div>
+        </div>
+        <div class="col order-1 order-md-2">
+            <img width="600" height="500" src="/static/images/SkyBridge.jpeg" />
+        </div>
+    </div>
+    <hr />
+    <hr />
+    <div class="row mt-3">
+        <div class="col-12 col-md-6 order-1 order-md-2">
+            <div class="d-flex flex-column gap-2 h-100 justify-content-center align-items-start">
+                <h2>Boulevard City</h2>
+                <p>Boulevard is a premier entertainment zone suitable for families and individuals who are into travelling, exploring and playing. With The Sphere, AREA15, the worlds largest man-made lake and wonders happening for the first time. A place that suits all ages and nationalities.</p>
+            </div>
+        </div>
+        <div class="col order-2 order-md-1">
+            <img width="600" height="500" src="/static/images/bolv.jpeg" />
+        </div>
+    </div>
+
+</div>
+
+
+
+
+{% endblock%}

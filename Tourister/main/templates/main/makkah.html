@@ -1,0 +1,78 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} {% endblock %}
+
+{% block content %}
+<div class="ruhv">
+    <h1>Welcome To Makkah</h1>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="/static/videos/makkah.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+</div>
+<hr />
+<div class="header">
+    <h1> Discover</h1>
+</div>
+<div class="container">
+
+    <div class="row mt-3">
+        <div class="col-12 col-md-6 order-2 order-md-1">
+            <div class="d-flex flex-column gap-2 h-100 justify-content-center align-items-start">
+                <h2>Al Masjed Al Haram, the greatest Islamic spot on earth.</h2>
+                <p>Al Masjed Al Haram receives great care, using the finest materials and innovative technologies to
+                    serve pilgrims, whose number exceeds millions per year. Over 24 hours, every day of the year,
+                    tranquility dominates the souls of visitors to Al Masjed Al Haram in Makkah, and preachers and
+                    worshipers are found in every corner of it, as they visit the place with sincere hope and
+                    overwhelming longing. </p>
+            </div>
+        </div>
+        <div class="col order-1 order-md-2">
+            <img class=" rounded-1" width="600" height="500" src="/static/images/almss.jpeg" />
+        </div>
+    </div>
+
+    <hr />
+    <div class="row mt-3">
+        <div class="col-12 col-md-6 order-1 order-md-2">
+            <div class="d-flex flex-column gap-2 h-100 justify-content-center align-items-start">
+                <h2>Hira Cultural District, the most famous tourist district of Makkah.</h2>
+                <p> Hira Cultural District, located next to the famous landmark of Makkah, Jabal Al-Nour, provides a
+                    uniquely enriching experience, in a cultural, historical and entertaining journey to the worlds of
+                    the past, to remain alive in memory. The area of the district is estimated at 67,000 square meters.
+                </p>
+            </div>
+        </div>
+        <div class="col order-2 order-md-1">
+            <img width="600" height="500" src="/static/images/hira.jpeg" />
+        </div>
+    </div>
+
+
+    <hr />
+    <div class="row mt-3">
+        <div class="col-12 col-md-6 order-2 order-md-1">
+            <div class="d-flex flex-column gap-2 h-100 justify-content-center align-items-start">
+                <h2>Clock Tower (The Cosmology Research Center​)</h2>
+                <p> The Cosmology Research Center (the museum) consists of four floors, and the implementation work is
+                    in an advanced stage.
+                    First floor: Dedicated to showcasing everything related to the Makkah Clock Tower, including its
+                    construction and the technologies used to determine time. Additionally, there is a terrace that
+                    overlooks the Kaaba.
+                    Second floor: It is dedicated to everything related to time measurement, human inventions, and
+                    documenting their attempts to know the time.
+                    Third floor: It is dedicated to the sun, earth, moon, and related topics.
+                    Fourth floor: It is dedicated to learning about the universe in general, including stars,
+                    constellations, and astronomical phenomena. </p>
+            </div>
+        </div>
+        <div class="col order-1 order-md-2">
+            <img width="600" height="500" src="/static/images/ClockTower.jpeg" />
+        </div>
+    </div>
+    <hr />
+
+</div>
+{% endblock%}

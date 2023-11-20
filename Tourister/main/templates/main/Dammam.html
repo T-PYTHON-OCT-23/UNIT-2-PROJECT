@@ -1,0 +1,70 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} {% endblock %}
+
+{% block content %}
+
+<div class="ruhv">
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="/static/videos/dammam.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+    </div>
+</div>
+<hr>
+
+<div class="header">
+    <h1> Discover</h1>
+</div>
+
+
+<div class="container">
+
+    <div class="row mt-3">
+        <div class="col-12 col-md-6 order-2 order-md-1">
+            <div class="d-flex flex-column gap-2 h-100 justify-content-center align-items-start">
+                <h2>Ithra</h2>
+                <p>The King Abdulaziz Center for World Culture (Ithra)—meaning "enrichment" in Arabic—was built as part of Saudi Aramco’s vision to be an ambitious initiative for the public. Ithra is the Kingdom’s leading cultural and creative destination for talent development and cross-cultural experiences. Since its opening in 2018, each attraction by Ithra serves as a window to global experiences, celebrating human potential and empowering creativity.
+                    The pillars include culture, creativity, community, art, and knowledge. With the visionary platforms and key pillars, Ithra continuously offers inspiring workshops, performances, and events.                    
+                </p>
+            </div>
+        </div>
+        <div class="col order-1 order-md-2">
+            <img class=" rounded-1" width="600" height="500" src="/static/images/ithra.jpeg" />
+        </div>
+    </div>
+
+    <hr />
+    <div class="row mt-3">
+        <div class="col-12 col-md-6 order-1 order-md-2">
+            <div class="d-flex flex-column gap-2 h-100 justify-content-center align-items-start">
+                <h2>Khobar Corniche</h2>
+                <p> Coastal promenade backed by parks & cafes, plus a contemporary mosque & a landmark water tower.</p>
+            </div>
+        </div>
+        <div class="col order-2 order-md-1">
+            <img width="600" height="500" src="/static/images/KhobarCorniche.jpeg" />
+        </div>
+    </div>
+
+
+    <hr />
+    <div class="row mt-3">
+        <div class="col-12 col-md-6 order-2 order-md-1">
+            <div class="d-flex flex-column gap-2 h-100 justify-content-center align-items-start">
+                <h2>Scitech(prince sultan Science and Technology Center)</h2>
+                <p>The Center was constructed on a 21,700 square meters land. The land is located on the North Corniche Road in Al-Khobar. And it is very attractive for tourists in the eastern province which is helping to publicize the center and attract visitors. The site at the eastern side of the Arabian gulf with its fascinating view had inspired the architectural concept of the project.</p>
+            </div>
+        </div>
+        <div class="col order-1 order-md-2">
+            <img width="600" height="500" src="/static/images/scitech.png" />
+        </div>
+    </div>
+    <hr />
+
+</div>
+
+
+
+{% endblock%}
