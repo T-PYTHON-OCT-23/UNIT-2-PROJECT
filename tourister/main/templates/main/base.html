@@ -24,7 +24,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link" href="#">الصفحة الرئسية </a>
+          <a class="nav-link" href="{% url 'main:home_view' %}">الصفحة الرئسية </a>
           <a class="nav-link" href="#">استكشف السعودية</a>
           <a class="nav-link active" aria-current="page" href="#">فعاليات وأكثر</a>
           <a class="nav-link disabled" aria-disabled="true">تواصل معنا</a>
@@ -41,7 +41,15 @@
    
   {% block content %}
   {% endblock %}
-
+  
+  
+  <footer class="bg-light text-center text-black">
+      <div class="container p-4 pb-0">
+       
+      </div>
+      <div class="text-center p-3 bg-light" >
+         © 2023 Copyright are reserved SA </div>
+    </footer>
 </body>
 </html>
 
