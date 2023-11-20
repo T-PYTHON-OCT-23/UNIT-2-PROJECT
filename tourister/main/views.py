@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from django.http import HttpRequest, HttpResponse
 # Create your views here.
 
@@ -9,11 +9,28 @@ def home_view(request: HttpRequest):
     return render(request, "main/home.html")
 
 
-def page_view(request: HttpRequest):
+def makat_view(request: HttpRequest):
 
-    return render(request, "main/page.html")
+    return render(request, "main/MakatPage.html")
 
 
-def contact_view(request: HttpRequest):
+def tabuk_view(request: HttpRequest):
 
-    return render(request, "main/contact.html")
+    return render(request, "main/TabukPage.html")
+
+def riyadh_view(request: HttpRequest):
+
+    return render(request, "main/RiyadhPage.html")
+
+def abha_view(request: HttpRequest):
+
+    return render(request, "main/AbhaPage.html")
+
+
+
+
+  
+
+  
+
+  

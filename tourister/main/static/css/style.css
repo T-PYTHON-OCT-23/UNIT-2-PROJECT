@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Lateef&family=Noto+Naskh+Arabic:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa&family=Lateef&family=Noto+Naskh+Arabic:wght@500&display=swap');
 *{
 padding:0 ;
 margin: 0;
@@ -6,14 +8,30 @@ box-sizing: border-box;
 
 }
 
-.bady{
-  background: #999;
+bady{
+  padding: 0;
+  margin: 0;
+  
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Amiri', serif;
+  font-family: 'Lateef', serif;
+  font-family: 'Noto Naskh Arabic', serif;
+  font-family: 'Amiri', serif;
+  font-family: 'Aref Ruqaa', serif;
+  font-family: 'Lateef', serif;
+   font-family: 'Noto Naskh Arabic', serif;
+}
+
+p, a {
+  font-family: 'Noto Naskh Arabic', serif;
 }
 
 .homepage{
  width:100% ;
  height: 100vh;
- background-image:linear-gradient(rgba(0, 0, 0, 185),rgba(0, 0, 0, 0.11)) ,url('/static/images/saudi2.jpg');
+ background-image:linear-gradient(rgba(0, 0, 0, 0.089),rgba(0, 0, 0, 0.089)) ,url('/static/images/saudi2.jpg');
  background-position: center;
  background-size: cover;
  padding-left: 8%;
@@ -21,71 +39,52 @@ box-sizing: border-box;
  box-sizing: border-box;
 }
 
+.homepage , .page-mecca {
+  padding-top: 20vh;
+}
+
 
 .logo-vison{
-    width: 10%;
+    width: 8%;
     height: 15%;
     cursor: pointer;
   
  }
  
 .logo{
-    width: 20%;
+    width: 15%;
     height: 30%;
     cursor: pointer;
     margin-right: 200px;
  }
 
 .material-symbols-outlined{
-    height: 10%;
+    height: 5%;
     cursor: pointer;
     color: aliceblue; 
     
  }
 
-.navbar-brand {
-    width:100%;
-    align-items: center;
-    display: flex;
-    background-color: rgb(0, 0, 0);
-    gap: 5vh;
-    padding: 1px 5rem;   
-     
-    
- }
- 
-.navbar-brand ul li{
-    list-style: none;
-    display: inline-block;
-    margin-right: 40px;
-    position: relative;
-    padding-top: 20px;
-    justify-content: space-between;
-    
- } 
- 
-.navbar-brand ul li a{
-     text-decoration: none;
-     color: #fff;
-     text-transform: uppercase;
-  } 
- 
-.navbar-brand ul li ::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background: #009688;
-    position: absolute;
-    right: 0;
-    bottom: -10px;
-    transition: 0.5s;
-    
-  } 
- 
-.navbar-brand ul li:hover ::after{
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0);
-  }
+ .navbar {
+  width:100%;
+  align-items: center;
+  display: flex;
+  background-color: transparent !important;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  gap: 5vh;
+  padding: 1px 5rem;
+  position: fixed;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link, .nav-link:active , .nav-link:visited, .nav-link:link {
+  color: white !important;
+}
   
 .row{
    display: flex;
@@ -100,12 +99,13 @@ box-sizing: border-box;
  h1{
    color: #fff;
    font-size: 50px;
+   
   } 
  
  p{
    color: #fff;
    font-size: 12px;
-   line-height: 15px;
+   line-height: 20px;
   } 
 
   h5{
@@ -115,17 +115,28 @@ box-sizing: border-box;
    text-shadow: 0 0 5px #999;
   } 
 
-  .row-page h5{
-    display: flex;
-    height: 88%;
-    align-items: center;
+   h3{
+    margin-right:30px;
+    color: #ffffff;
    }
+
+   h4{
+    margin-right:30px;
+    color: #ffffff;
+   }
+
+  .row-page{
+    display: flex;
+    height: 40%;
+    align-items: center; 
+    margin-right:55px;
+  }
  
  .col-page p{
-  flex-basis: 50%;
-   }
+  margin-right:40px;
  
-
+  
+   }
 button{
    width: 180px;
    color: black;
@@ -177,45 +188,373 @@ button{
 
 .page-mecca{
   width:100% ;
-  height:100vh;
-  background-image:linear-gradient(rgba(0, 0, 0, 171),rgba(0, 0, 0, 0.171)) ,url('/static/images/makat33.jpg');
+  height:100nv;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.192),rgba(0, 0, 0, 0.192)) ,url('/static/images/makat33.jpg');
   background-position: center;
   background-size: cover;
   
 }
-
  .container{
-  width: 90%;
-  padding: 20px;
-  margin: 100px auto;
+  width:80%;
+  padding:20px;
+  margin: 55px auto;
   display: flex;
   flex-direction: row;
   justify-content: center; 
+  }
+  .container-1{
+
+    width:70%;
+    padding: 10px;
+    margin: 55px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+
+  }
+  .container-2{
+    width:50%;
+    padding: 10px;
+    margin: 55px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
   }
 
  .box{
   width: 250;
   margin: 0 10px;
-  box-shadow: 0 0 30px rgb(255, 255, 255);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.473);
   transition: 1s;
-  shape-margin:  rgb#fff 10px;
+  shape-margin:  rgb#0000008e 10px;
  }
-
  .box img{
   display: block;
   width: 100%;
   border-radius: 5px;
 
  }
-
  .box:hover{
   transform: scale(1.3);
   z-index: 2;
+ }
+ .container-mecca{
+  margin-right:55px;
+}
+
+ .box p {
+  text-shadow: 0 0 15px #000;
+  font-size: 8px;
+ }
+
+ .container-mecca h4{
+   
+    display: inline-block;
+    margin-left:40px;
+    position: relative;
+    padding-top: 5px;
+    justify-content: space-between;
+    color: #ffffff;
 
  }
- h5{
-  color: aliceblue;
+ video{
+  display: block;
+  width: fit-content;
+  width:100% ;
+  object-fit: cover;
+  background-size: cover;
+  margin-top: 0;
+  padding-top:0;
+  overflow: hidden;
+  position: absolute;
+  top:0px;
+  z-index: -1;
+}
+
+
+
+.container-saudi{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background: whitesmoke;
+ 
+}
+
+img{
+  height: 250px;
+  margin: 50px;
+  border-radius: 3px;
+ 
+}
+
+.card-saudi{
+ height: 500px;
+ margin: 50px;
+ box-shadow:5px 5px 20px rgba(0, 0, 0, 0.521) ;
+ overflow: hidden; 
+ 
+}
+
+.card-saudi :hover{
+  cursor: pointer;
+}
+
+.card-saudi :hover .intro{
+  height: 220px;
+  bottom: 240px;
+  background: #000;
+}
+
+.card-saudi :hover p{
+  opacity: 1;
+  visibility: visible;
+ 
+}
+
+.card-saudi :hover img{
+ transform: scale(1.1)rotate(-3deg);
+ 
+
+ 
+}
+.intro{
+  height: 70px;
+  width: 350px;
+  padding:4px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 240px;
+  background: rgb(27,27,27,5);
+  color: rgb(128, 121, 121);
+  transition: .5s;
+}
+
+.h3{
+  margin: 10px;
+  font-size: 20px;
+  color: #1565b6;
+  text-align: center;
+  font-family: 'Amiri', serif;
+}
+
+.p{
+  font-size: 15px;
+  margin: 20px;
+  visibility: hidden;
+  opacity: 0;
+  color: rgb(0, 0, 0);
+  font-family:  serif;
+  text-align: center;
+}
+
+span{
+  font-weight: bold;
+}
+
+.h1{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #ffffff93;
+  width: 600px;
+  height: 300px;
+  z-index: 1;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+ 
+ 
+}
+.h1 p{
+text-align: right;
+font-size: 13px;
+color: #000;
+margin-right: 5px;
+}
+
+
+.slidershow {
+ width: 700px;
+ height: 400px;
+ overflow: hidden;
+ 
+}
+
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.bar{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.bar:hover{
+  background: #fff;
+}
+
+input[name="r"]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+.slide{
+  width:20%;
+  transition: 0.6s;
+}
+
+
+.slide img{
+  width: 100%;
+  height:100%;
+}
+
+#r1:checked ~.s1{
+  margin-left: 0;
+}
+
+#r2:checked ~.s1{
+  margin-left: -20%;
+}
+
+#r3:checked ~.s1{
+  margin-left: -40%;
+}
+
+#r4:checked ~.s1{
+  margin-left: -60%;
+}
+
+#r5:checked ~.s1{
+  margin-left: -80%;
+}
+
+
+.riyadhpage{
+  width:100% ;
+  height: 100vh;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) ,url('/static/images/Riyadh.jpg');
+  background-position: center;
+  background-size: cover;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.riyadhpage , .page-mecca {
+  padding-top: 20vh;
+}
+
+.card1{
+  background-image:url('/static/images/imgr1.png') ;
+ }
+ .card2{
+  background-image:url('/static/images/imgr4.jpg') ;
+ }
+ .card3{
+  background-image:url('/static/images/imgr3.png') ;
+ }
+ .card4{
+  background-image:url('/static/images/imgr2.png') ;
+ }
+ .card:hover{
+  transform:translateY(-10px);
+ }
+
+ .videos1{
+  background: rgba(238, 216, 170, 0.527)
  }
 
 
+
+.card1{
+  background-image:url('/static/images/imga1a.jpg') ;
+ }
+ .card2{
+  background-image:url('/static/images/imga2a.jpg') ;
+ }
+ .card3{
+  background-image:url('/static/images/imga4a.jpg') ;
+ }
+ .card4{
+  background-image:url('/static/images/imga3a.jpg') ;
+ }
+ .card:hover{
+  transform:translateY(-10px);
+  display:flex;
+  align-items: center;
+ 
+ }
+
+ .card card1{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(170, 238, 227, 0.349)
+ }
+
+ .am h1{
+  color: #000;
+  font-family: 'Amiri', serif;
+
+ }
+
+ 
+.card1{
+  background-image:url('/static/images/img1.png') ;
+ }
+ .card2{
+  background-image:url('/static/images/') ;
+ }
+ .card3{
+  background-image:url('/static/images/img3.png') ;
+ }
+ .card4{
+  background-image:url('/static/images/imga2a.jpg') ;
+ }
+ .card:hover{
+  transform:translateY(-10px);
+  display:flex;
+  align-items: center;
+ 
+ }
+
+ 
+ .am{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(170, 238, 227, 0.349)
+ }
+
+ .am h1{
+  color: #000;
+  font-family: 'Amiri', serif;
+
+ }
 
