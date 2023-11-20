@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu&display=swap" rel="stylesheet">
+    <title>{% block title %} Tourist {% endblock %}</title>
+    <link href="/static/css/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu&family=Playfair+Display:wght@500&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<body class="body">
+    <div>
+        <nav position="sticky">
+            <div class="nav-links">
+                <img src="/static/media/logo.jpg" />
+                <div class="bar">
+                    <a href="/" class="material-symbols-outlined"><img src="/static/media/home.png" /> Home </a>
+                    <a href="{% url 'main:contact' %}" class="material-symbols-outlined"><img
+                            src="/static/media/call.png" /> Contact </a>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+    <footer>
+        <div>
+            <nav class="images">
+                <img class="flight" src="/static/media/flightsmode.png" />
+                <div class="links">
+                    <a href="{% url 'main:riyadh' %}" class="b"> <img class="images" src="/static/media/riyadh.jpg" />
+                        Riyadh </a>
+                    <a href="{% url 'main:makkah' %}" class="b"> <img class="images" src="/static/media/makkah.jpg" />
+                        Makkah </a>
+                    <a href="{% url 'main:alula' %}" class="b"> <img class="images" src="/static/media/alula.jpeg" />
+                        Alula </a>
+                    <a href="{% url 'main:jeddah' %}" class="b"> <img class="images" src="/static/media/jeddah.jpg" />
+                        Jeddah </a>
+                </div>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

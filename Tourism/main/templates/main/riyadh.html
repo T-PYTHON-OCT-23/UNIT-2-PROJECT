@@ -1,0 +1,45 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %} Riyadh {% endblock %}
+
+{% block content %}
+<div>
+    <h1 class="title-city"><b> TOURIST IN RIYADH </b></h1>
+    <div class="city">
+        <p class="to-city"> Welcome to Riyadh, a city that seamlessly blends tradition with modernity, offering a
+            captivating tapestry of culture, history, and innovation. </p>
+        <video controls class="video">
+            <source src="/static/media/riyadh.mp4" type="video/mp4"> Riyadh
+        </video>
+    </div>
+</div>
+
+
+<div>
+    <div class="bord">
+        <div class="line1">
+            <img src="/static/media/riyadh-cro1.jpg">
+            <h6 class="h"> As you embark on your journey through the heart of Saudi Arabia in the 2023 season, be
+                prepared to be
+                enchanted by the extraordinary attractions that await you </h6>
+            <img src="/static/media/riyadh-cro2.jpg">
+        </div>
+        <div class="line2">
+            <h6 class="h"> One must-visit destination is the historic Masmak Fortress, where the echoes of the past
+                resonate
+                through its towering mud-brick walls.</h6>
+            <img src="/static/media/riyadh-cro3.jpg">
+            <h6 class="h"> Feel the palpable history as you explore the very site that witnessed the reclaiming of
+                Riyadh in 1902 by the founder of Saudi Arabia, King Abdulaziz Al Saud.</h6>
+        </div>
+        <div class="line3">
+            <img src="/static/media/riyadh-cro4.jpg">
+            <h6 class="h"> For a taste of Riyadh's futuristic charm, venture into the King Abdullah Financial District.
+                Here,
+                glistening skyscrapers pierce the sky, symbolizing the city's commitment to progress and modernity.
+            </h6>
+            <img src="/static/media/riyadh-cro5.jpg">
+        </div>
+    </div>
+
+    {% endblock %}
