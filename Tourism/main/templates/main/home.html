@@ -1,0 +1,84 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}  {% endblock %}
+
+{% block content %}
+
+
+    <div>
+    <video src="https://firebasestorage.googleapis.com/v0/b/tourister-1daa0.appspot.com/o/vid1.mp4?alt=media&token=49950252-73ae-4bfa-b546-737fa9a4c7d6" width="400" height="400"  autoplay loop muted>
+    </div>
+
+        <div class="wrapper homepage-content" >
+            <div class="sub-content">
+
+            <h1 style="font-size: 60px;"> Tourism in Saudi Arabia</h1>
+            </div>
+        </div>
+
+    <div class="page">
+        <div class="text">
+            <h2 style="font-size: 60px;"> Tourism in Saudi Arabia</h2><br>
+            <p style="font-size: 25px;">Since the launch of Vision 2030, Saudi Arabia is more open than ever before welcoming people from around the globe. With the introduction of the e-visa in 2019, millions of visitors have been drawn to the Kingdom, which has helped in creating jobs and driving local economic growth.
+
+            To further promote the country as a tourist destination, initiatives in the areas of archaeology, culture, education, and the arts are being undertaken to preserve the Kingdom's rich heritage and natural beauty, while opening it up to the world. Major events like the Red Sea International Film Festival and the Saudi Arabian Grand Prix are attracting visitors and showcasing the Kingdom's warm hospitality.
+            
+            Additionally, as a central location in the Arab and Islamic world, Saudi Arabia is enhancing its facilities and services to provide pilgrims with an unforgettable spiritual experience. As it welcomes the world to come and experience its unique offering, the Kingdom's breathtaking beauty and rich heritage make it a must-visit destination.</p><br>
+            <br>
+            <br>
+        </div>
+
+    <div  style="display: flex; justify-content: center; align-items: center;" class="mbs">
+        <img src="https://firebasestorage.googleapis.com/v0/b/tourister-1daa0.appspot.com/o/mbs.jpg?alt=media&token=43879535-5590-4186-8edf-aadf88ecb554" width="600px" height="700px"> 
+        <h1>His Royal Highness Prince Mohammed bin Salman bin Abdulaziz</h1>
+    </div>
+
+
+      
+    <div class="text2">
+        <div style="display: inline-block; width: 20px; height: 180px; background-color: rgba(169, 133, 87, 0.992);margin-left: 30px; margin-top: 15px; gap: 10px; "></div>
+             <p>VISION 2030 HAS ENABLED AN ECONOMIC TRANSFORMATION THAT HAS
+             IN TURN DRIVEN A CULTURAL TRANSFORMATION IN SAUDI ARABIA. 
+             THROUGH THE DIGITAL ECONOMY AND NEW SECTORS LIKE TOURISM, GAMING, ENTERTAINMENT, 
+             AND CULTURE, WE ARE CONNECTING THE SAUDI PEOPLE TO THE WORLD, AND THE WORLD WITH SAUDI ARABIA.</p>
+    </div>
+           
+
+            <p class="t">Saudi Arabia is a country with a rich history and culture, stunning natural beauty, and diverse landscapes.<br><br>
+
+                The country's history dates back thousands of years, and it has been home to a variety of civilizations, including the ancient Arabs, the Romans, and the Ottomans. Saudi Arabia is also home to the birthplace of Islam, and it is a major pilgrimage destination for Muslims from all over the world.<br><br>
+                
+                The country's culture is a rich and diverse mix of influences, including Arab, Islamic, and Western. Saudi Arabia is home to a variety of festivals and celebrations throughout the year, and it is a great place to experience the country's unique culture.<br><br>
+                
+                The country's natural beauty is also a major draw for tourists. Saudi Arabia is home to a variety of landscapes, including mountains, deserts, and beaches. The country is also home to a number of national parks and protected areas.<br><br>
+                Saudi Arabia is a country with something to offer everyone. Whether you are interested in history, culture, nature, or religion, you are sure to find something to enjoy in Saudi Arabia.</p><br>
+            <br>
+
+      <div class="footer-bar" style="display: flex; justify-content: center; align-items: center; gap: 15px; margin-top: 20px;" >
+        <div class="city-item" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/tourister-1daa0.appspot.com/o/abha.jpg?alt=media&token=d4c2fedc-d8a3-43de-84af-4a08e20f69ea)">
+          <a href="{% url 'main:abha'%}"><h2>ABHA</h2></a>
+        </div>
+        <div class="city-item" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/tourister-1daa0.appspot.com/o/amlg.jpg?alt=media&token=4556bc62-029c-46a2-acea-9f23de0fd6c6)">
+          <a href="{% url 'main:amlg' %}"><h2>UMLUJ</h2></a>
+        </div>
+        <div class="city-item" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/tourister-1daa0.appspot.com/o/ry.JPG?alt=media&token=6e37b72d-125a-462e-8fd0-e67058656f39)">
+          <a href="{% url 'main:riyadh'%}"><h2>RIYADH</h2></a>
+        </div>
+        <div class="city-item" style="background-image: url(https://firebasestorage.googleapis.com/v0/b/tourister-1daa0.appspot.com/o/alula.JPG?alt=media&token=f91bb1bf-627e-4f92-b740-41a6605689a9)">
+            <a href="{% url 'main:alula'%}"><h2>ALULA</h2></a>
+          </div>
+      </div>
+      
+      
+      
+      
+      
+</div>
+
+
+
+
+
+
+{% endblock %}

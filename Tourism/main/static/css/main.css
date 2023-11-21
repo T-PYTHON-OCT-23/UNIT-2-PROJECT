@@ -1,0 +1,355 @@
+@font-face {
+    font-family: "Tajawal";
+    src: url("https://fonts.googleapis.com/css2?family=Tajawal:wght@100;200;300;400;500;600;700;800;900&display=swap");
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700');
+
+
+nav{
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top:0px;
+    left:0px;
+    padding-top: 10vh;
+    z-index: 10;
+    display: flex;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    flex-direction: row;
+    gap: 4rem;
+    padding: 2rem 7rem;
+    flex-wrap: wrap;
+    align-items: center;
+    align-items: start;
+    position: absolute;
+    background-color: white;
+  
+}
+nav :hover {
+    background-color: white;
+}
+
+ video{
+    display: inline;
+    width: fit-content;
+    width: 100%; 
+    height: 800px;
+    object-fit: cover;
+    background-size: cover;
+    margin-top: 0;
+    padding-top:0;
+    position: relative;
+    overflow: hidden;
+    position: absolute;
+    top: 320px;
+    z-index: 0;
+
+   
+}
+
+.v_u{
+    margin: center;
+    padding: 3% 20% 2%; 
+}
+.v_m_umlug{
+    margin: center;
+    padding: 0% 180px 5%;
+}
+.v_m{
+    margin: center;
+    padding: 0% 8% 2%;
+}
+.v_u_m{
+    margin: center;
+    padding: 0% 30% 5%;
+}
+.v_u_abha{
+    margin: center;
+    padding: 0% 50px 5%;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.text{
+   color: rgba(169, 133, 87, 0.992);
+   font-family: 'Cairo', sans-serif;
+}
+
+
+  
+.navbar-brand {
+    font-family: "Tajawal";
+}
+  
+  
+  
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+  
+  
+.bar:hover {
+    background-color: white;
+    color: black;
+    
+}
+.wrapper {
+    padding: 24vh 10vw;
+    padding-bottom: 10vh;
+    background-size: cover;
+    width: 100%;  
+}
+.wrapper_alula{
+    padding: 24vh 10vw;
+    padding-bottom: 40vh;
+    background-size: cover;
+    width: 100%;   
+}
+.wrapper_r{
+    padding: 24vh 10vw;
+    padding-bottom: 40vh;
+    background-size: cover;
+    width: 100%; 
+}
+.homepage-alula{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/tourister-1daa0.appspot.com/o/ha2.jpg?alt=media&token=b5d620d0-71e0-4bb8-8980-3383f60aee45');
+}
+.homepage_r{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/tourister-1daa0.appspot.com/o/hr1.jpg?alt=media&token=8a325b8c-9a7f-4ae4-a0bc-5dc9c4b4294a');
+}
+
+.homepage-content {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/tourister-1daa0.appspot.com/o/banner.jpg?alt=media&token=20335ce6-5818-47e5-b5ae-1e42c8c6de85');
+} 
+.homepage-um{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/tourister-1daa0.appspot.com/o/hum.jpg?alt=media&token=446659aa-262c-46d5-9190-05a44ff4619b');
+}
+.homepage-ab{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/tourister-1daa0.appspot.com/o/h_abha.jpg?alt=media&token=4bbc52be-9972-4147-a090-250741277fb3');
+}
+
+.sub-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+    font-size: 100;
+    color: azure;
+    font-family: 'Cairo', sans-serif;
+}
+.sub-content_alula{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 60px;
+    gap: 2rem;
+    font-size: 100;
+    color: azure;
+    font-family: 'Cairo', sans-serif;
+ 
+}
+
+
+.navbar.navbar-expand-lg.navbar-light.bg-white{
+    align-items: start;
+    position: absolute;
+    z-index: 3;
+    position: fixed;
+}
+
+.page{
+    padding: 90vh 15vw 20vh;
+    font-family: 'Cairo', sans-serif;
+
+ 
+}
+.mbs {
+ 
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    background-size: cover;
+    width: 90%;
+    gap: 3rem;
+    color: rgba(169, 133, 87, 0.992);
+}
+.text2{
+    flex-direction: row;
+    display: flex;
+    background-size: cover;
+    width: 80%;
+    justify-content: center;
+    align-items: center; 
+    gap: 15px; 
+    margin-top: 40px;
+    margin-left: 30px;
+    color:  rgba(63, 54, 43, 0.992);
+    font-size: 25px;
+}
+
+
+  .city-item {
+    width: 400px;
+    height: 500px;
+    flex-direction: row;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+    margin-top: 100px;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  
+  }
+
+  .city-item a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    display: center;
+    
+  }
+
+  .city-item a:hover {
+    color: rgba(216, 196, 218, 0.992);
+  }
+
+.footer-bar .city-item:hover {
+    transform: scale(1.1);
+    transition-timing-function: ease-in-out;
+  }
+
+.t{
+    font-size: 25px;
+    margin-top: 90px;
+    color:rgba(169, 133, 87, 0.992);
+  }
+  
+
+.display-mode a {
+    color: rgb(75, 72, 72);
+
+}
+
+.top_nav a{
+    font-size: px;
+}
+.display-mode{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    background-size: cover;
+    width: 90%;
+    gap: 3rem;
+    color: rgba(169, 133, 87, 0.992);
+
+}
+.abha{
+    padding: 10vh 15vw ;
+}
+
+.content_abha{
+    gap: 30px;
+
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    background-size: cover;
+    width: 90%;
+    gap: 3rem;
+    color: rgba(169, 133, 87, 0.992);
+    font-family: 'Cairo', sans-serif;
+ 
+}
+.abha p {
+  color: rgba(173, 125, 63, 0.992);
+}
+
+.all_img{
+    width: 400px;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    background-size: cover;
+  
+}
+#carouselExampleCaptions{
+    width: 400px;
+    height: 500px;
+    align-items: center;
+    display: flex;
+    background-size: cover;
+}
+
+p{
+    font-size: 18px;
+}
+.content_umluj{
+    gap: 20px;
+    margin-top: 80px;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    background-size: cover;
+    width: 100%;
+    color: rgba(169, 133, 87, 0.992);
+    font-family: 'Cairo', sans-serif;
+}
+
+
+.carousel {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+
+.carousel img {
+    height: 450px !important;
+    width: 100%;
+    object-fit: cover;
+}
+.Umluj{
+    padding: 5vh 15vw;
+    z-index: 0;
+}
+
+
+.mar{
+    margin-bottom: 100px;
+}
+.container_f{
+    justify-content: space-between;
+    flex-direction: row;
+    display: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #ffffff5b;
+    gap: 2px;
+    
+
+
+}
+.line{
+    width: 100%;
+
+}
+.contact{
+    text-decoration: none;
+}
+
