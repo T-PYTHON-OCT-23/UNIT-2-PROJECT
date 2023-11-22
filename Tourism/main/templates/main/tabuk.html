@@ -1,0 +1,55 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+<!--background video -->
+{% block video %}
+<video autoplay loop muted>
+    <source src="{% static 'video/city/tabuk/tabuk.mp4' %}" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+{% endblock %}
+<!-- -->
+
+<!-- card image-->
+{% block bodycardimage %}
+<img src="{% static 'images/city/tabuk/tabukhome.jpeg' %}" class="card-img-top" alt="..." width="200px" height="200px">
+{% endblock %}
+<!-- -->
+
+<!-- card contant -->
+{% block bodycardcontant %}
+<p class="card-text" >The average temperature is average in the summer and cool in the winter, with beautiful sea beaches free of pollution and coral reefs with stunning views that encourage tourists to dive and enjoy these views, as well as the presence of high-rise mountains covered with trees. West of Tabuk there is the famous Hasmi region, which is distinguished by its mountains</p>
+{% endblock %}
+<!-- -->
+
+<!-- location -->
+{% block bodylocation %}
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224619.7991159213!2d36.401091669527744!3d28.398599930309146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15a9ad0594132365%3A0x6f40e3c6b6139acf!2sTabuk!5e0!3m2!1sen!2ssa!4v1700393852682!5m2!1sen!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{% endblock %}
+<!-- -->
+
+<!-- loop for card -->
+{% block card %}
+{% for contect in contants %}
+<div class="col">
+    <a href="{% url 'main:tabuk_city_views'%}">
+    <div class="card" style="width: 18rem;">
+      <img src="{{contect.image}}" class="card-img-top" alt="..." width="150px" height="150px">
+      <div class="card-body">
+        <h4> {{ contect.title }}</h4>
+        <p class="card-text"> {{ contect.paragraph }}</p>
+      </div>
+    </div>
+    </a>
+</div>
+{% endfor %}
+{% endblock %}
+<!-- -->
+
+
+<!-- paragraph -->
+{% block paragraph %}
+<p> A steep tower with a wonderful view. There is also Jabal al-Lawz in Tabuk, which is famous for its bright whiteness in the winter due to the effects of falling snow. There is the village of Al-Deesa, which is famous for its wonderful views, strange-shaped mountains, and water springs from the mountains.
+    The city of Tabuk has a moderate climate in the summer, and it is cold and rainy in the winter. The maximum temperature in the summer is 30-40 Celsius, and the minimum is 20-25 Celsius. In the winter, the maximum temperature is 15-5 and the minimum is 3 to below zero. It is affected on some days by the climate of the White Sea. The average temperature also drops, which may lead to heavy snowfall at times.</p>
+{% endblock %}
+<!-- -->

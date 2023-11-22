@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Tourism in Saudi Arabia</title>
+</head>
+<body class="font">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <section class="video-container">
+      {% block video %}
+      <video autoplay loop muted>
+          <source src="{% static 'video/home/homepage.mp4'%}" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      {% endblock %}
+      <header>
+          <div class="logo">
+            <a href="{% url 'main:home_page_views' %}" style="text-decoration: none;">
+              <img src="{% static 'images/home/main.png' %}" width="100px" height="100px" style="border-radius: 50%; color: #FFFFFF;" alt="Your Logo">
+              <h3 style="margin-top: -29px; color: black;">HazalNut</h3>
+            </a>
+          </div>
+          <nav>
+              <ul>
+                  <li><a href="{% url 'main:rafha_city_views' %}">Rafha</a></li>
+                  <li><a href="{% url 'main:tabuk_city_views' %}">Tabuk</a></li>
+                  <li><a href="{% url 'main:arar_city_views' %}">Arar</a></li>
+                  <li><a href="{% url 'main:skaka_city_views' %}">Skaka</a></li>
+              </ul>
+          </nav>
+      </header>
+
+      <div class="container text-center">
+        <div class="row card-content-body" style="padding-top: 6rem; padding-bottom: 3rem; margin-left: 100px;">
+            <div class="col-4">
+              <div class="card card-content-body" style="width: 18rem;">
+                {% block bodycardimage %}
+                <img src="{% static 'images/home/home.jpg' %}" class="card-img-top" alt="...">
+                {% endblock %}
+                <div class="card-body" style="text-align: start;">
+                  {% block bodycardcontant %}
+                  <p class="card-text">Kingdom has a large area, beaches centered on the coast of the Red Sea and the Arabian Gulf, high mountain ranges, and the diversity of its wonderful systems, tourism and tourist attractions are a very important element of the country’s tourist attractions. However, despite this, the status of tourism in the Arab world, and in the Gulf Cooperation Council countries in particular, is still very limited, as its size is not 3% of the gross domestic product. Saudi Arabia invested about 25 billion riyals in this field during the period between 1995 and 2002.</p>
+                  {% endblock %}
+                </div>
+              </div>
+            </div>
+            <div class="col-8 ratio ratio-16x9" style="width: 38rem;">
+              {% block bodylocation %}
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14944204.39278938!2d55.71968632519429!3d23.872329513098254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e7b33fe7952a41%3A0x5960504bc21ab69b!2z2KfZhNiz2LnZiNiv2YrYqQ!5e0!3m2!1sar!2ssa!4v1700427487179!5m2!1sar!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              {% endblock %}
+            </div>
+        </div>
+      </div>
+
+  </section>
+  <section class="section2">
+    <div class="container" style="width: 100%; background-color: #F6F6F6; height: 100vh; border-radius: 16px;">
+      <div class="row" style="padding: 8px; padding-top: 20px;">
+        {% block card %}
+        <div class="col">
+          <a href="{% url 'main:skaka_city_views' %}">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/home/skaka.jpg' %}" class="card-img-top" alt="..." width="200px" height="200px" >
+            <div class="card-body">
+              <p class="card-text">The city of Sakaka has ancient historical importance. Its authenticity is rooted in the depths of history, as it has lived with the various human civilizations existing in the region throughout history, in addition to being one of the regions rich in historical and archaeological monuments, drawings, and writings.</p>
+            </div>
+          </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="{% url 'main:tabuk_city_views'%}">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/home/tabuk.jpeg' %}" class="card-img-top" alt="..." width="200px" height="200px">
+            <div class="card-body">
+              <p class="card-text">The history of Tabuk dates back to five hundred years before Christ, as evidenced by the antiquities found there, which were called (Tabu) or (Tabu). The antiquities also indicate that the Tabuk region was home to many nations before Islam, such as the defunct Arabs such as Thamuud, the Arameans, and the Nabataeans. Historians mention that Tabuk was home to the Leprosy tribe.</p>
+            </div>
+          </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="{% url 'main:arar_city_views'%}">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/home/arar.jpg' %}" class="card-img-top" alt="..." width="200px" height="200px">
+            <div class="card-body">
+              <p class="card-text">Pasture is at the forefront of all economic activities in the region, and this has been helped by the availability of natural pastures of plants that flourish in the spring and others that are available in the summer. Residents graze camels and sheep. An office was established in Arar to improve pastures and guide herders, in addition to the veterinary department, which contributes to caring for animals and protecting them from diseases.</p>
+            </div>
+          </div>
+          </a>
+        </div>
+        <div class="col">
+          <a href="{% url 'main:rafha_city_views'%}">
+          <div class="card" style="width: 18rem;">
+            <img src="{% static 'images/home/rafha.jpg' %}" class="card-img-top" alt="..." width="200px" height="200px">
+            <div class="card-body">
+              <p class="card-text">The name of Rafha Governorate goes back to the continent (hill) of Rafha, currently located northwest of the city. This continent (hill) took its name from a woman called Rafha, who lived with her family near the continent.</p>
+            </div>
+          </div>
+          </a>
+        </div>
+        {% endblock %}
+      </div>
+
+      <div class="row" style="background-color: #FFFFFF; padding: 3px; margin-left: 8px; margin-right: 20px; border-radius: 8px; margin-top: 10px;">
+        {% block paragraph %}
+        <p> Tourism in Saudi Arabia
+          Saudi Arabia is a land of abundant natural and historical spectacles. It has been a travel destination for Muslim pilgrims for centuries from all over the world. In Saudi Arabia, tourism was associated only with religious travelling until a few years ago. However, the trend has changed in recent years, and now leisure tourism has also become an important area of development for the Saudi government (About Saudi Arabia, 2015).
+          
+          With the formation of the Supreme Commission for Tourism in April 2000, now known as the Saudi Commission for Tourism and Antiquity (SCTA), greater emphasis is being laid on the development of tourism, preservation of the historical sites, and conservation of the traditional crafts in the country. Saudi Arabia has remained the centre of most religious pilgrimages for centuries. But now it has started focusing on the leisure tourism sector too. Domestic tourism has also been growing in the region in recent years (Vincent, 2008)</p>
+        {% endblock %}
+      </div>
+    </div>
+    <footer>
+      <div style="text-align: start;">
+        <h6>Hazalnut</h6>
+        <h6>All right are reserved</h6>
+      </div>
+      <div style="text-align: start;">
+        <h5>Contact Us:</h5>
+        <h6>HazalNut@gmail.com</h6>
+        <h6>Almasif,12466</h6>
+        <h6>King salman rouad</h6>
+        <h6>Saudi Arabia</h6>
+      </div>
+    </footer>
+  </section>
+</body>
+</html>

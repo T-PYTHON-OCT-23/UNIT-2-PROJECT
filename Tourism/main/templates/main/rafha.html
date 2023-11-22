@@ -1,0 +1,54 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+<!--background video -->
+{% block video %}
+<video autoplay loop muted>
+    <source src="{% static 'video/city/rafha/Rafha.mp4' %}" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+{% endblock %}
+<!-- -->
+
+<!-- card image-->
+{% block bodycardimage %}
+<img src="{% static 'images/city/rafha/tapline.jpg' %}" class="card-img-top" alt="..." width="300px" height="200px">
+{% endblock %}
+<!-- -->
+
+<!-- card contant -->
+{% block bodycardcontant %}
+<p class="card-text" >In the year 1370 AH / 1950 AD, Rafha Governorate was established when the homes of those who joined the Tapline Company, including tents, mud houses, and boxes, spread near the work site. It was initially called the Pipeline Governorate.</p>
+{% endblock %}
+<!-- -->
+
+<!-- location -->
+{% block bodylocation %}
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55486.09342355997!2d43.555084309314275!3d29.636203987758037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x156467a6448582b9%3A0x1bea5289ed0a4c39!2z2LHZgdit2KfYoQ!5e0!3m2!1sar!2ssa!4v1700381116028!5m2!1sar!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{% endblock %}
+<!-- -->
+
+<!-- loop for card -->
+{% block card %}
+{% for contect in contants %}
+<div class="col">
+    <a href="{% url 'main:rafha_city_views'%}">
+    <div class="card" style="width: 18rem;">
+      <img src="{{contect.image}}" class="card-img-top" alt="..." width="300px" height="300px">
+      <div class="card-body">
+        <h4> {{ contect.title }}</h4>
+        <p class="card-text"> {{ contect.paragraph }}</p>
+      </div>
+    </div>
+    </a>
+</div>
+{% endfor %}
+{% endblock %}
+<!-- -->
+
+
+<!-- paragraph -->
+{% block paragraph %}
+<p> The growth of the real governorate and the city began in the year 1369-1370 AH, 1949-1950, with the institutionalization of the Tapline Line, which connected the oil regions in the east of the Arabian Kingdom with the port of Al-Zahrani, south of the Lebanese city of Sidon, passing through the countries of Jordan, and wherever Saudi Arabia decided to establish the line’s paths to strengthen pumping in this area, which was named Yamr. The principles of boycotting pipelines and winning the opportunity to work in this station attract people little by little to it until these population centers unite into one of the major cities along this line.</p>
+{% endblock %}
+<!-- -->

@@ -1,0 +1,54 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+<!--background video -->
+{% block video %}
+<video autoplay loop muted>
+    <source src="{% static 'video/city/arar/Arar.mp4' %}" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+{% endblock %}
+<!-- -->
+
+<!-- card image-->
+{% block bodycardimage %}
+<img src="{% static 'images/city/arar/ararhome.jpeg' %}" class="card-img-top" width="200px" height="250px" alt="...">
+{% endblock %}
+<!-- -->
+
+<!-- card contant -->
+{% block bodycardcontant %}
+<p class="card-text" >Arar is a Saudi border city, located in the northern border region of the Kingdom, adjacent to the Iraqi border city of Nukhayb and 390 km away from the Jordanian border. The city of Arar is considered the administrative and commercial center of the northern border region, and is also considered the cultural center in the northern region of the Kingdom of Saudi Arabia, and is 1,100 km away from the city of Riyadh. Approximately one kilometre</p>
+{% endblock %}
+<!-- -->
+
+<!-- location -->
+{% block bodylocation %}
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109498.56461284148!2d41.14041333313816!3d30.947308097377924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x156c0dc455b08a5d%3A0x40cb4da0f4da43e3!2z2LnYsdi52LE!5e0!3m2!1sar!2ssa!4v1700426356297!5m2!1sar!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{% endblock %}
+<!-- -->
+
+<!-- loop for card -->
+{% block card %}
+{% for contect in contants %}
+<div class="col">
+    <a href="{% url 'main:skaka_city_views' %}">
+    <div class="card" style="width: 18rem;">
+      <img src="{{contect.image}}" class="card-img-top" alt="..." width="180px" height="180px">
+      <div class="card-body">
+        <h4> {{ contect.title }}</h4>
+        <p class="card-text"> {{ contect.paragraph }}</p>
+      </div>
+    </div>
+    </a>
+</div>
+{% endfor %}
+{% endblock %}
+<!-- -->
+
+
+<!-- paragraph -->
+{% block paragraph %}
+<p> Arar can be reached easily, as it is connected to the rest of the Kingdom’s regions by a network of modern highways, and due to its strategic location on the main roads linking Jordan and Syria in the north and the Gulf states in the east. It can also be visited easily as there are three regional airports in each of Arar. , Rafha, and Turaif, which operates flights to all regions of the Kingdom. You can also visit this city and enjoy the beauty of its nature, parks, and sand dunes.</p>
+{% endblock %}
+<!-- -->

@@ -1,0 +1,54 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+<!--background video -->
+{% block video %}
+<video autoplay loop muted>
+    <source src="{% static 'video/city/skaka/Skaka.mp4' %}" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+{% endblock %}
+<!-- -->
+
+<!-- card image-->
+{% block bodycardimage %}
+<img src="{% static 'images/city/skaka/skakahome.jpeg' %}" class="card-img-top" width="200px" height="250px" alt="...">
+{% endblock %}
+<!-- -->
+
+<!-- card contant -->
+{% block bodycardcontant %}
+<p class="card-text" >A Saudi city located in the Al-Jawf region in the northwestern side of the Kingdom of Saudi Arabia, and there is a center for the emirate. It overlooks the city of Hail and Tabuk to the west, and the Hashemite Kingdom of Jordan to the north. It comes in last place in terms of population of governorates in the Kingdom.</p>
+{% endblock %}
+<!-- -->
+
+<!-- location -->
+{% block bodylocation %}
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d442714.7619835064!2d39.779714806693555!3d29.901482224129552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1572b94c63eeeaf9%3A0x1f06043b3222855a!2sSakaka!5e0!3m2!1sen!2ssa!4v1700392602116!5m2!1sen!2ssa" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+{% endblock %}
+<!-- -->
+
+<!-- loop for card -->
+{% block card %}
+{% for contect in contants %}
+<div class="col">
+    <a href="{% url 'main:skaka_city_views'%}">
+    <div class="card" style="width: 18rem;">
+      <img src="{{contect.image}}" class="card-img-top" alt="..." width="150px" height="150px">
+      <div class="card-body">
+        <h4> {{ contect.title }}</h4>
+        <p class="card-text"> {{ contect.paragraph }}</p>
+      </div>
+    </div>
+    </a>
+</div>
+{% endfor %}
+{% endblock %}
+<!-- -->
+
+
+<!-- paragraph -->
+{% block paragraph %}
+<p>The city of Sakaka is located in the heart of the Saudi Al-Jawf region, and is administratively subject to Prince Fahd bin Badr bin Abdulaziz Al Saud. Geographically, it is approximately 566 meters above sea level, and occupies a space in the northern part of the country. The city of Sakaka is affected by the continental desert climate. Its winters are cold and its summers are very hot. The maximum temperature in summer reaches more than 42 degrees Celsius, while temperatures drop in winter to 7 degrees below zero.</p>
+{% endblock %}
+<!-- -->
