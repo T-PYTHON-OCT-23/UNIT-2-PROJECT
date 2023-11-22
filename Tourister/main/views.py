@@ -57,3 +57,14 @@ def large_font_size_view(request: HttpRequest):
 
     return response
 
+def event_view(request: HttpRequest):
+
+    return render(request,"main/event.html")
+
+def tourism_guidance_view(request: HttpRequest):
+
+    return render(request,"main/guidance.html")
+
+def travel_view(request: HttpRequest):
+
+    return render(request,"main/travel.html")
